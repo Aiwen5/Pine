@@ -1,9 +1,11 @@
-const Footer = () => {
-    return (
+import styles from "@/components/Footer/Footer.module.css"
+
+export default function Footer() {
+  return(
+    <>
       <footer>
-        <p>&copy; {new Date().getFullYear()} Your Company Name</p>
+        <p>Pine</p>
       </footer>
-    );
-  }
-  
-  export default Footer;
+    </>
+  )
+}
