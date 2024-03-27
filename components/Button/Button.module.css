@@ -1,0 +1,13 @@
+.button {
+    width: 191px;
+    height: 49px;
+    border-radius: 30px;
+    background-color: var(--primary);
+    color: var(--bg);
+    border-color: var(--secondary);
+}
+
+.button:active {
+    background-color: var(--secondary);
+    border-color: var(--primary)
+}

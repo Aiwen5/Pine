@@ -1,3 +1,8 @@
 :root {
- 
+    --primary: #2B3F47;
+    --secondary: #46757C;
+    --bg: #EFFFF8;
+    --bgAccent: #C2EEE1;
+
+    --font-h1: 3.5em;
 }
