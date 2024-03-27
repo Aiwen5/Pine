@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Button from '@/components/Button'
 import styles from '@/styles/LandingPage.module.css'
 
 export default function LandingPage() {
@@ -11,13 +12,22 @@ export default function LandingPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-        <h1>Welcome To Pine!</h1>
+        <h1 className={styles.title}>Welcome To Pine!</h1>
         <img
           className={styles.logo}
           src="./images/logo"
           alt="Pine's logo"
         >
         </img>
+        <Button 
+          placeholder="Get Started!"
+        />
+        <Button 
+          placeholder="Quiz Me"
+        />
+        <Button 
+          placeholder="Tutorial"
+        />
       </main>
     </>
   )

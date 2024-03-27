@@ -4,8 +4,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  min-height: 80vh;
+  background-color: var(--bg);
 }
+
+.title {
+  font-size: var(--font-h1);
+  
+}
+
+.logo {
+  width: 300px;
+  height: 300px;
+}
+
 @media (max-width: 932px) {
   
 }
