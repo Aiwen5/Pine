@@ -6,3 +6,7 @@
 
     --font-h1: 3.5em;
 }
+
+body {
+    margin: 0;
+}
