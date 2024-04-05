@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import styles from '@/styles/Home.module.css'; 
+import styles from '@/styles/Result.module.css'; 
 import { useState } from 'react';
 import Link from 'next/link';
 import Button from '@/components/Button';
 
-export default function Home() {
+export default function Result() {
     return (
         <>
           <Head>
@@ -14,7 +14,14 @@ export default function Home() {
             <link rel="icon" href="/favicon.ico" />
           </Head>
           <main className={`${styles.main}`}>
-          
+          <div className={styles.buttonContainer}>
+          <Link href="/Diet">
+            <Button placeholder="Retake Quiz" />
+          </Link>
+          <Link href="/Home">
+            <Button placeholder="Done" />
+          </Link>
+        </div>
           </main>
           </>
   );
