@@ -13,7 +13,7 @@ export default function LandingPage() {
         <link rel="icon" href="/Logo.ico" />
       </Head>
       <main className={`${styles.main}`}>
-        <h1 className={styles.title}>Welcome</h1>
+        <h1 className={styles.title}>Welcome To</h1>
         <Image src="/PineLogo.svg" alt="Pine Logo" width={300} height={300} />
         <div className={styles.buttons}>
           <Button 
