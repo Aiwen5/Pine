@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Button from '@/components/Button'
 import styles from '@/styles/LandingPage.module.css'
+import Link from 'next/link'
 
 export default function LandingPage() {
   return (
@@ -19,9 +20,11 @@ export default function LandingPage() {
           <Button 
             placeholder="Get Started!"
           />
+          <Link href="/Diet">
           <Button 
             placeholder="Quiz Me"
           />
+          </Link>
           <Button 
             placeholder="Tutorial"
           />
