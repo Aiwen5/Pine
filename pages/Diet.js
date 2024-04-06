@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import styles from '@/styles/Diet.module.css'
+import Head from 'next/head';
+import styles from '@/styles/Diet.module.css';
 import { useState } from 'react';
 import Link from 'next/link';
 import Button from '@/components/Button';
@@ -8,20 +8,22 @@ export default function Q1() {
   const [selectedOption, setSelectedOption] = useState('');
 
   const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
+    const option = event.target.value;
+    setSelectedOption(option);
+    sessionStorage.setItem('selectedOption1', option);
   };
 
-    return (
-      <>
-        <Head>
-          <title>Quiz</title>
-          <meta name="description" content="Created by Daniel Der & Evan Schatz" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <main className={`${styles.main}`}>
-          <h1>Do You Have Any Dietary Restrictions?</h1>
-          <div className={styles.radioOption}>
+  return (
+    <>
+      <Head>
+        <title>Quiz</title>
+        <meta name="description" content="Created by Daniel Der & Evan Schatz" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main className={`${styles.main}`}>
+        <h1>Do You Have Any Dietary Restrictions?</h1>
+        <div className={styles.radioOption}>
           <label className={styles.radioLabel}>
             <input
               type="radio"
@@ -66,16 +68,14 @@ export default function Q1() {
           </label>
         </div>
         <Link href="/LandingPage">
-          <Button 
-            placeholder="Back"
-          />
-          </Link>
-          <Link href="/Goal">
+          <Button placeholder="Back" />
+        </Link>
+        <Link href="/Goal">
           <Button 
             placeholder="Next"
           />
-          </Link>
-        </main>
-      </>
-    )
-  }
+        </Link>
+      </main>
+    </>
+  );
+}
