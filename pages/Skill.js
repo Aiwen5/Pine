@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '@/styles/Skill.module.css';
+import styles from '@/styles/Diet.module.css';
 import { useState } from 'react';
 import Link from 'next/link';
 import Button from '@/components/Button';
@@ -8,7 +8,9 @@ export default function Q3() {
   const [selectedOption, setSelectedOption] = useState('');
 
   const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
+    const option = event.target.value;
+    setSelectedOption(option);
+    sessionStorage.setItem('selectedOption3', option);
   };
 
   return (
@@ -20,7 +22,7 @@ export default function Q3() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-        <h1>If You Would Rate Your Cooking Skill, What Would It Be?</h1>
+        <h1>If you were to rate your cooking skill, what would it be?</h1>
         <div className={styles.radioOption}>
           <label className={styles.radioLabel}>
             <input
@@ -65,14 +67,14 @@ export default function Q3() {
             Option 4
           </label>
         </div>
-        <div className={styles.buttonContainer}>
-          <Link href="/Goal">
-            <Button placeholder="Back" />
-          </Link>
-          <Link href="/Cuisine">
-            <Button placeholder="Next" />
-          </Link>
-        </div>
+        <Link href="/Skill">
+          <Button placeholder="Back" />
+        </Link>
+        <Link href="/Cuisine">
+          <Button 
+            placeholder="Next"
+          />
+        </Link>
       </main>
     </>
   );

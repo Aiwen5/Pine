@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '@/styles/Goal.module.css';
+import styles from '@/styles/Diet.module.css';
 import { useState } from 'react';
 import Link from 'next/link';
 import Button from '@/components/Button';
@@ -8,7 +8,9 @@ export default function Q2() {
   const [selectedOption, setSelectedOption] = useState('');
 
   const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
+    const option = event.target.value;
+    setSelectedOption(option);
+    sessionStorage.setItem('selectedOption2', option);
   };
 
   return (
@@ -20,7 +22,7 @@ export default function Q2() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-        <h1>Do You Have Any Health Goals?</h1>
+        <h1>Do you have any health Goals?</h1>
         <div className={styles.radioOption}>
           <label className={styles.radioLabel}>
             <input
@@ -65,11 +67,13 @@ export default function Q2() {
             Option 4
           </label>
         </div>
-        <Link href="/Diet">
+        <Link href="/Goal">
           <Button placeholder="Back" />
         </Link>
         <Link href="/Skill">
-          <Button placeholder="Next" />
+          <Button 
+            placeholder="Next"
+          />
         </Link>
       </main>
     </>

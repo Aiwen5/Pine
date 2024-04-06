@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import styles from '@/styles/Cuisine.module.css'
+import Head from 'next/head';
+import styles from '@/styles/Cuisine.module.css';
 import { useState } from 'react';
 import Link from 'next/link';
 import Button from '@/components/Button';
@@ -11,58 +11,58 @@ export default function Q4() {
     setSelectedOption(event.target.value);
   };
 
-    return (
-      <>
-        <Head>
-          <title>Quiz</title>
-          <meta name="description" content="Created by Daniel Der & Evan Schatz" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <main className={`${styles.main}`}>
-          <h1>What Is Your Favourite Kind Of Cuisine</h1>
-          <div className={styles.radioOption}>
+  return (
+    <>
+      <Head>
+        <title>Quiz</title>
+        <meta name="description" content="Created by Daniel Der & Evan Schatz" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main className={`${styles.main}`}>
+        <h1>What Is Your Favourite Kind Of Cuisine</h1>
+        <div className={styles.radioOption}>
           <label className={styles.radioLabel}>
             <input
               type="radio"
-              value="option1"
-              checked={selectedOption === 'option1'}
+              value="Italian Cuisine"
+              checked={selectedOption === 'Italian Cuisine'}
               onChange={handleOptionChange}
             />
-            Option 1
+            Italian
           </label>
         </div>
         <div className={styles.radioOption}>
           <label className={styles.radioLabel}>
             <input
               type="radio"
-              value="option2"
-              checked={selectedOption === 'option2'}
+              value="Indian Cuisine"
+              checked={selectedOption === 'Indian Cuisine'}
               onChange={handleOptionChange}
             />
-            Option 2
+            Indian
           </label>
         </div>
         <div className={styles.radioOption}>
           <label className={styles.radioLabel}>
             <input
               type="radio"
-              value="option3"
-              checked={selectedOption === 'option3'}
+              value="American Cuisine"
+              checked={selectedOption === 'American Cuisine'}
               onChange={handleOptionChange}
             />
-            Option 3
+            American
           </label>
         </div>
         <div className={styles.radioOption}>
           <label className={styles.radioLabel}>
             <input
               type="radio"
-              value="option4"
-              checked={selectedOption === 'option4'}
+              value="Asian Cuisine"
+              checked={selectedOption === 'Asian Cuisine'}
               onChange={handleOptionChange}
             />
-            Option 4
+            Asian
           </label>
         </div>
         <Link href="/Skill">
@@ -70,7 +70,7 @@ export default function Q4() {
             placeholder="Back"
           />
           </Link>
-          <Link href="/Result">
+          <Link href={{ pathname: '/Result', query: { selectedOption4: selectedOption } }}>
           <Button 
             placeholder="Next"
           />
