@@ -1,27 +1,15 @@
-import Head from 'next/head';
-import styles from '@/styles/Cuisine.module.css';
-import { useState } from 'react';
-import Link from 'next/link';
-import Button from '@/components/Button';
+import Button from "../Button";
+import styles from "@/styles/Quiz.module.css";
 
-export default function Q4() {
-  const [selectedOption, setSelectedOption] = useState('');
-
+export default function Q4({ selectedOption, onAnswerChange, onNext, onPrev }) {
   const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
+    onAnswerChange('Q4', event.target.value);
   };
 
   return (
-    <>
-      <Head>
-        <title>Quiz</title>
-        <meta name="description" content="Created by Daniel Der & Evan Schatz" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className={`${styles.main}`}>
-        <h1>What Is Your Favourite Kind Of Cuisine</h1>
-        <div className={styles.radioOption}>
+    <main className={`${styles.main}`}>
+      <h1>What is your favorite type of cuisine?</h1>
+      <div className={styles.radioOption}>
           <label className={styles.radioLabel}>
             <input
               type="radio"
@@ -65,17 +53,10 @@ export default function Q4() {
             Asian
           </label>
         </div>
-        <Link href="/Skill">
-          <Button 
-            placeholder="Back"
-          />
-          </Link>
-          <Link href={{ pathname: '/Result', query: { selectedOption4: selectedOption } }}>
-          <Button 
-            placeholder="Next"
-          />
-          </Link>
-        </main>
-      </>
-    )
-  }
+      <Button placeholder="Previous Question" onClick={onPrev} />
+      <Button placeholder="See Results" onClick={onNext} />
+    </main>
+  );
+}
+
+

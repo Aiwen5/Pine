@@ -1,9 +1,9 @@
 import styles from "@/components/Button/Button.module.css"
 
-export default function Button({placeholder}) {
+export default function Button({ placeholder, onClick }) {
     return(
         <>
-            <button className={styles.button}>{placeholder}</button>
+            <button className={styles.button} onClick={onClick}>{placeholder}</button>
         </>
     )
 }

@@ -20,7 +20,7 @@ export default function LandingPage() {
           <Button 
             placeholder="Get Started!"
           />
-          <Link href="/Diet">
+          <Link href="/quiz">
           <Button 
             placeholder="Quiz Me"
           />

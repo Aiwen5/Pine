@@ -4,6 +4,8 @@
   
   .radioOption {
     margin-bottom: 10px;
+    align-items: flex-start;
+    display: flex;
   }
   
   .radioLabel {
