@@ -5,6 +5,10 @@
     --bgAccent: #C2EEE1;
 
     --font-h1: 3.5em;
+    --font-h2: 2.5em;
+    --font-body: 14pt;
+    --font-body-bold: 16pt bold;
+
 }
 
 body {
