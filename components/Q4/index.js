@@ -9,6 +9,7 @@ export default function Q4({ selectedOption, onAnswerChange, onNext, onPrev }) {
 
   return (
     <main className={`${styles.main}`}>
+        <img className={styles.progressBar} src="/ProgressQ4.png" alt="progress bar"></img>
         <h1 className="title">What is your favorite type of cuisine?</h1>
         <section className={styles.radioButtons}>
             <RadioButton
