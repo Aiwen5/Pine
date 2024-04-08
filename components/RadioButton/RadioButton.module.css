@@ -7,7 +7,12 @@
   }
   
   .radioInput {
-    display: none;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .radioInput:focus-visible + .radioLabel .customRadioButton {
+    box-shadow: 0 0 0 3px orange;
   }
   
   .radioLabel {
