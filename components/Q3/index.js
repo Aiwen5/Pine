@@ -1,4 +1,5 @@
 import Button from "../Button";
+import RadioButton from "@/components/RadioButton"; 
 import styles from "@/styles/Quiz.module.css";
 
 export default function Q3({ selectedOption, onAnswerChange, onNext, onPrev }) {
@@ -8,53 +9,42 @@ export default function Q3({ selectedOption, onAnswerChange, onNext, onPrev }) {
 
   return (
     <main className={`${styles.main}`}>
-      <h1>How would you rate your cooking skills?</h1>
-      <div className={styles.radioOption}>
-          <label className={styles.radioLabel}>
-            <input
-              type="radio"
-              value="option1"
-              checked={selectedOption === 'option1'}
-              onChange={handleOptionChange}
-            />
-            Option 1
-          </label>
-        </div>
-        <div className={styles.radioOption}>
-          <label className={styles.radioLabel}>
-            <input
-              type="radio"
-              value="option2"
-              checked={selectedOption === 'option2'}
-              onChange={handleOptionChange}
-            />
-            Option 2
-          </label>
-        </div>
-        <div className={styles.radioOption}>
-          <label className={styles.radioLabel}>
-            <input
-              type="radio"
-              value="option3"
-              checked={selectedOption === 'option3'}
-              onChange={handleOptionChange}
-            />
-            Option 3
-          </label>
-        </div>
-        <div className={styles.radioOption}>
-          <label className={styles.radioLabel}>
-            <input
-              type="radio"
-              value="option4"
-              checked={selectedOption === 'option4'}
-              onChange={handleOptionChange}
-            />
-            Option 4
-          </label>
-        </div>
-      <Button placeholder="Previous Question" onClick={onPrev} />
-      <Button placeholder="Next Question" onClick={onNext} />
+        <h1 className="title">How would you rate your cooking skills?</h1>
+      
+        <RadioButton
+            label="I can boil pasta"
+            name="cookingSkills"
+            value="I can boil pasta"
+            checked={selectedOption}
+            onChange={handleOptionChange}
+        />
+        
+        <RadioButton
+            label="I make a mean omlette"
+            name="cookingSkills"
+            value="I make a mean omlette"
+            checked={selectedOption}
+            onChange={handleOptionChange}
+        />
+        
+        <RadioButton
+            label="I'm a home cook"
+            name="cookingSkills"
+            value="I'm a home cook"
+            checked={selectedOption}
+            onChange={handleOptionChange}
+        />
+        
+        <RadioButton
+            label="I could go pro!"
+            name="cookingSkills"
+            value="I could go pro!"
+            checked={selectedOption}
+            onChange={handleOptionChange}
+        />
+        
+        <Button placeholder="Back" onClick={onPrev} />
+        <Button placeholder="Next" onClick={onNext} />
     </main>
   );
 }
