@@ -10,41 +10,43 @@ export default function Q3({ selectedOption, onAnswerChange, onNext, onPrev }) {
   return (
     <main className={`${styles.main}`}>
         <h1 className="title">How would you rate your cooking skills?</h1>
-      
-        <RadioButton
-            label="I can boil pasta"
-            name="cookingSkills"
-            value="I can boil pasta"
-            checked={selectedOption}
-            onChange={handleOptionChange}
-        />
-        
-        <RadioButton
-            label="I make a mean omlette"
-            name="cookingSkills"
-            value="I make a mean omlette"
-            checked={selectedOption}
-            onChange={handleOptionChange}
-        />
-        
-        <RadioButton
-            label="I'm a home cook"
-            name="cookingSkills"
-            value="I'm a home cook"
-            checked={selectedOption}
-            onChange={handleOptionChange}
-        />
-        
-        <RadioButton
-            label="I could go pro!"
-            name="cookingSkills"
-            value="I could go pro!"
-            checked={selectedOption}
-            onChange={handleOptionChange}
-        />
-        
-        <Button placeholder="Back" onClick={onPrev} />
-        <Button placeholder="Next" onClick={onNext} />
+        <section className={styles.radioButtons}>
+            <RadioButton
+                label="I can boil pasta"
+                name="cookingSkills"
+                value="boil pasta"
+                checked={selectedOption}
+                onChange={handleOptionChange}
+            />
+            
+            <RadioButton
+                label="I make a mean omlette"
+                name="cookingSkills"
+                value="make a mean omlette"
+                checked={selectedOption}
+                onChange={handleOptionChange}
+            />
+            
+            <RadioButton
+                label="I'm a home cook"
+                name="cookingSkills"
+                value="cook!"
+                checked={selectedOption}
+                onChange={handleOptionChange}
+            />
+            
+            <RadioButton
+                label="I could go pro!"
+                name="cookingSkills"
+                value="could go pro!"
+                checked={selectedOption}
+                onChange={handleOptionChange}
+            />
+        </section>
+        <div className={styles.buttonContainer}>
+            <Button placeholder="Back" onClick={onPrev} />
+            <Button placeholder="Next" onClick={onNext} />
+        </div>
     </main>
   );
 }
