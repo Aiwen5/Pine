@@ -13,9 +13,6 @@
     cursor: pointer;
   }
   
-  .radioLabel:hover {
-    background-color: #f0f0f0;
-  }
   
   .radioLabel input {
     margin-right: 5px;

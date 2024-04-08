@@ -13,8 +13,8 @@ export default function RadioButton({ label, name, value, checked, onChange }) {
           className={styles.radioInput}
         />
         <label htmlFor={value} className={styles.radioLabel}>
-          <span className={styles.customRadioButton}></span>
-          <span className={styles.labelText}>{label}</span>
+            <span className={styles.customRadioButton}></span>
+            <span className={styles.labelText}>{label}</span>
         </label>
       </div>
     );
