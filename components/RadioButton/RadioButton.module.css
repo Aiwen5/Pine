@@ -1,0 +1,67 @@
+.radioContainer {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .radioInput {
+    display: none;
+  }
+  
+  .radioLabel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 8px 0;
+  }
+  
+  .customRadioButton {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    display: inline-block;
+    position: relative;
+  }
+  
+  .customRadioButton::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    opacity: 0;
+  }
+  
+  .labelText {
+    display: block;
+    text-align: center;
+    margin-left: 30px;
+  }
+  
+  
+  .radioInput:checked + .radioLabel .customRadioButton::before {
+    opacity: 1;
+    animation: fillCircle 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  @keyframes fillCircle {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    70% {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.05);
+    }
+  }
+  
+  

@@ -1,5 +1,4 @@
 import Button from "../Button";
-import Link from "next/link";
 import styles from "@/styles/Quiz.module.css"
 
 export default function Q1({ selectedOption, onAnswerChange, onNext }) {
@@ -55,7 +54,7 @@ export default function Q1({ selectedOption, onAnswerChange, onNext }) {
                 Option 4
               </label>
             </div>
-            <Button placeholder="Back" onClick={<Link href="/LandingPage"></Link>} />
+            <Button placeholder="Back" href="/" />
             <Button placeholder="Next Question" onClick={onNext} />
           </main>
         </>

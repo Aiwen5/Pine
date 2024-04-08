@@ -1,18 +1,15 @@
 .main {
     text-align: center;
+    min-height: 80vh;
   }
   
   .radioOption {
     margin-bottom: 10px;
-    align-items: flex-start;
-    display: flex;
   }
   
   .radioLabel {
     display: inline-block;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     cursor: pointer;
   }
   
@@ -24,4 +21,6 @@
     margin-right: 5px;
     cursor: pointer;
   }
-  
+  .title {
+    margin-top: 60px;
+  }
