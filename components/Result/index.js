@@ -4,7 +4,7 @@ import styles from "@/components/Result/Result.module.css";
 export default function Result({ answers, onRestart }) {
   return (
     <main className={styles.main}>
-      <h1>Quiz Results</h1>
+      <h1 className={styles.title}>Quiz Results</h1>
       <section className={styles.resultsSection}>
             <h2>Based on your answers,<br></br>it seems like:</h2>
             <div className={styles.results}>
