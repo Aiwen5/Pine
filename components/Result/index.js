@@ -6,6 +6,7 @@ import animationData from '@/animations/panTree.json';
 
 export default function Result({ answers, onRestart }) {
   const [recipes, setRecipes] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const apiKey = process.env.NEXT_PUBLIC_SPOONACULAR_API_KEY;
@@ -14,23 +15,34 @@ export default function Result({ answers, onRestart }) {
     const number = 3;
     const url = `https://api.spoonacular.com/recipes/complexSearch?query=${cuisine}&diet=${diet}&number=${number}&apiKey=${apiKey}`;
 
-    const fetchData = async () => {
-      try {
-        const response = await fetch(url);
-        const data = await response.json();
+    fetch(url)
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        null;
+      })
+      .then((data) => {
         setRecipes(data.results);
-      } catch (error) {
+      })
+      .catch((error) => {
         console.error('Error fetching data from Spoonacular:', error);
-      }
-    };
+      })
+      .finally(() => {
+        setLoading(false);
+      });
 
-    fetchData();
-  }, [answers]);
+  }, [answers.Q1, answers.Q4]);
 
   return (
     <main className={styles.main}>
       <h1>Quiz Results</h1>
-      {recipes.length > 0 ? (
+      {loading ? (
+        <div>
+          <LottieAnimation className={styles.lottieContainer} animationData={animationData} height={250} />
+          <p>Loading...</p>
+        </div>
+      ) : recipes.length > 0 ? (
         <div className={styles.recipeList}>
           <h2 className={styles.reccomend}>Top 3 Recommended Dishes For You</h2>
           {recipes.map((recipe, index) => (
@@ -41,10 +53,7 @@ export default function Result({ answers, onRestart }) {
           ))}
         </div>
       ) : (
-        <div>
-          <LottieAnimation className={styles.lottieContainer} animationData={animationData} height={250} />
-          <p>Loading...</p>
-        </div>
+        <p>No recipes found.</p>
       )}
       <div className={styles.buttons}>
         <Button placeholder="Restart Quiz" onClick={onRestart} />
@@ -53,4 +62,3 @@ export default function Result({ answers, onRestart }) {
     </main>
   );
 }
-  
