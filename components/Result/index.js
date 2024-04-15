@@ -1,46 +1,59 @@
 import { useState, useEffect } from "react";
 import Button from "../Button";
 import styles from "@/components/Result/Result.module.css";
+import LottieAnimation from '@/components/Animation/LottieAnimation';
+import animationData from '@/animations/panTree.json';
 
 export default function Result({ answers, onRestart }) {
   const [recipes, setRecipes] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const appId = process.env.NEXT_PUBLIC_EDAMAM_APP_ID;
-    const appKey = process.env.NEXT_PUBLIC_EDAMAM_API_KEY;
-    const diet = answers.Q1
-    const cuisine = answers.Q4;
-    const url = `https://api.edamam.com/search?q=${cuisine}&app_id=${appId}&app_key=${appKey}&diet=${diet}&to=3`;
+    const apiKey = process.env.NEXT_PUBLIC_SPOONACULAR_API_KEY;
+    const diet = encodeURIComponent(answers.Q1);
+    const cuisine = encodeURIComponent(answers.Q4);
+    const number = 3;
+    const url = `https://api.spoonacular.com/recipes/complexSearch?query=${cuisine}&diet=${diet}&number=${number}&apiKey=${apiKey}`;
 
-    const fetchData = async () => {
-      try {
-        const response = await fetch(url);
-        const data = await response.json();
-        if(data.hits) {
-          setRecipes(data.hits.slice(0, 3));
+    fetch(url)
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
         }
-      } catch (error) {
-        console.error('Error fetching data from Edamam:', error);
-      }
-    };
+        null;
+      })
+      .then((data) => {
+        setRecipes(data.results);
+      })
+      .catch((error) => {
+        console.error('Error fetching data from Spoonacular:', error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
 
-    fetchData();
   }, [answers.Q1, answers.Q4]);
 
   return (
     <main className={styles.main}>
       <h1>Quiz Results</h1>
-      {recipes.length > 0 ? (
+      {loading ? (
         <div>
-          <h2>Top 3 Recommended Dishes For You</h2>
-          {recipes.map((hit, index) => (
-            <div key={index}>
-              <h3>{hit.recipe.label}</h3>
+          <LottieAnimation className={styles.lottieContainer} animationData={animationData} height={250} />
+          <p>Loading...</p>
+        </div>
+      ) : recipes.length > 0 ? (
+        <div className={styles.recipeList}>
+          <h2 className={styles.reccomend}>Top 3 Recommended Dishes For You</h2>
+          {recipes.map((recipe, index) => (
+            <div className={styles.recipeItem} key={index}>
+              <h3>{recipe.title}</h3>
+              <img className={styles.recipeImage} src={recipe.image} alt={recipe.title} />
             </div>
           ))}
         </div>
       ) : (
-        <p>Loading recipes...</p>
+        <p>No recipes found.</p>
       )}
       <div className={styles.buttons}>
         <Button placeholder="Restart Quiz" onClick={onRestart} />
@@ -49,4 +62,3 @@ export default function Result({ answers, onRestart }) {
     </main>
   );
 }
-
