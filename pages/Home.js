@@ -7,13 +7,11 @@ export default function Home() {
   const data = [
     { 
       imageURL: 'https://www.justonecookbook.com/wp-content/uploads/2023/09/Onigiri-Japanese-Rice-Balls-2053-II.jpg', 
-      description: 'Japanese', 
-      buttonText: 'View'
+      buttonText: 'Japanese'
     },
     { 
       imageURL: 'https://images.pexels.com/photos/4049145/pexels-photo-4049145.jpeg?cs=srgb&dl=pexels-prasannabaarathi-4049145.jpg&fm=jpg', 
-      description: 'Italian', 
-      buttonText: 'View'
+      buttonText: 'Italian'
     }
   ];
 

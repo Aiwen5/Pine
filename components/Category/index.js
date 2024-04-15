@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './Category.module.css'; 
 
-const Category = ({ imageURL, description, buttonText, imageSize }) => {
+export default function Category({ imageURL, description, buttonText, imageSize }) {
   return (
     <div className={styles.card}>
       <img className={styles.image} src={imageURL} alt="Category Image" style={imageSize} />
@@ -17,5 +17,3 @@ const Category = ({ imageURL, description, buttonText, imageSize }) => {
     </div>
   );
 };  
-
-export default Category;
