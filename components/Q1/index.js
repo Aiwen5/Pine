@@ -23,7 +23,15 @@ export default function Q1({ selectedOption, onAnswerChange, onNext }) {
             <RadioButton
                 label="Vegan"
                 name="dietaryRestrictions"
-                value="vegan food"
+                value="vegan"
+                checked={selectedOption}
+                onChange={handleOptionChange}
+            />
+
+            <RadioButton
+                label="Vegetarian"
+                name="dietaryRestrictions"
+                value="vegetarian"
                 checked={selectedOption}
                 onChange={handleOptionChange}
             />
@@ -39,7 +47,15 @@ export default function Q1({ selectedOption, onAnswerChange, onNext }) {
             <RadioButton
                 label="Halal"
                 name="dietaryRestrictions"
-                value="halal food"
+                value="halal"
+                checked={selectedOption}
+                onChange={handleOptionChange}
+            />
+
+            <RadioButton
+                label="Pescetarian"
+                name="dietaryRestrictions"
+                value="Pescetarian"
                 checked={selectedOption}
                 onChange={handleOptionChange}
             />

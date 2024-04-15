@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 80vh;
+    min-height: 80vh;
     padding: 20px;
     text-align: center;
   }
@@ -14,7 +14,6 @@
   
   .radioOption {
     width: 100%;
-    margin-bottom: 20px;
   }
   
   .radioLabel {
@@ -26,6 +25,7 @@
 
   .progressBar {
     position: relative;
-    top: 50px;
+    top: 60px;
     width: 400px;
+    margin-bottom: 70px;
   }

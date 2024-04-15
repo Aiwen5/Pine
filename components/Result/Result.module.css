@@ -1,36 +1,55 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 80vh;
-    padding: 20px;
-  }
-  
-  .resultsSection {
-    background-color: var(--bgAccent);
-    border-radius: 20px;
-    padding: 30px;
-    margin: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    max-width: 600px;
-    width: 55%;
-  }
-  
-  .results {
-    font-size: var(--font-body);
-    margin-bottom: 30px;
-  }
-  
-  .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
 
-  .title {
-    position: relative;
-    top: 50px;
-  }
+.results {
+  font-size: var(--font-body);
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.title {
+  position: relative;
+  top: 50px;
+}
+
+.lottieContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipeList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.recipeItem {
+  margin: 10px 0;
+}
+
+.recipeImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.reccomend {
+  text-align: center;
+}

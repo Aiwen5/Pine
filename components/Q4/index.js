@@ -15,7 +15,7 @@ export default function Q4({ selectedOption, onAnswerChange, onNext, onPrev }) {
             <RadioButton
                 label="Italian"
                 name="cuisine"
-                value="Italian cuisine"
+                value="Italian"
                 checked={selectedOption}
                 onChange={handleOptionChange}
             />
@@ -23,7 +23,7 @@ export default function Q4({ selectedOption, onAnswerChange, onNext, onPrev }) {
             <RadioButton
                 label="Indian"
                 name="cuisine"
-                value="Indian Cuisine"
+                value="Indian"
                 checked={selectedOption}
                 onChange={handleOptionChange}
             />
@@ -31,7 +31,7 @@ export default function Q4({ selectedOption, onAnswerChange, onNext, onPrev }) {
             <RadioButton
                 label="American"
                 name="cuisine"
-                value="American cuisine"
+                value="American"
                 checked={selectedOption}
                 onChange={handleOptionChange}
             />
@@ -39,7 +39,7 @@ export default function Q4({ selectedOption, onAnswerChange, onNext, onPrev }) {
             <RadioButton
                 label="Asian"
                 name="cuisine"
-                value="Asian cuisine"
+                value="Asian"
                 checked={selectedOption}
                 onChange={handleOptionChange}
             />
@@ -47,7 +47,7 @@ export default function Q4({ selectedOption, onAnswerChange, onNext, onPrev }) {
             <RadioButton
                 label="Mexican"
                 name="cuisine"
-                value="Mexican cuisine"
+                value="Mexican"
                 checked={selectedOption}
                 onChange={handleOptionChange}
             />
