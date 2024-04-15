@@ -1,0 +1,52 @@
+.card {
+    width: 200px; 
+    height: 200px; 
+    position: relative;
+    border-radius: 10px; 
+    overflow: hidden; 
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    opacity: 0.75;
+  }
+  
+  .cardBody {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .description {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-body-bold);
+    color: var(--secondary);
+  }
+  
+  .cardTitle {
+    margin: 0;
+  }
+  
+  .button {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 8px 16px; 
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-body-bold);
+  }
