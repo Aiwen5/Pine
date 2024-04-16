@@ -36,28 +36,30 @@ export default function Result({ answers, onRestart }) {
 
   return (
     <main className={styles.main}>
-      <h1>Quiz Results</h1>
-      {loading ? (
-        <div>
-          <LottieAnimation className={styles.lottieContainer} animationData={animationData} height={250} />
-          <p>Loading...</p>
+      <div className={styles.container}>
+        <h1>Quiz Results</h1>
+        {loading ? (
+          <div>
+            <LottieAnimation className={styles.lottieContainer} animationData={animationData} height={250} />
+            <p>Loading...</p>
+          </div>
+        ) : recipes.length > 0 ? (
+          <div className={styles.recipeList}>
+            <h2 className={styles.reccomend}>Top 3 Recommended Dishes For You</h2>
+            {recipes.map((recipe, index) => (
+              <div className={styles.recipeItem} key={index}>
+                <h3>{recipe.title}</h3>
+                <img className={styles.recipeImage} src={recipe.image} alt={recipe.title} />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p>No recipes found.</p>
+        )}
+        <div className={styles.buttons}>
+          <Button placeholder="Restart Quiz" onClick={onRestart} />
+          <Button placeholder="Done" href="/" />
         </div>
-      ) : recipes.length > 0 ? (
-        <div className={styles.recipeList}>
-          <h2 className={styles.reccomend}>Top 3 Recommended Dishes For You</h2>
-          {recipes.map((recipe, index) => (
-            <div className={styles.recipeItem} key={index}>
-              <h3>{recipe.title}</h3>
-              <img className={styles.recipeImage} src={recipe.image} alt={recipe.title} />
-            </div>
-          ))}
-        </div>
-      ) : (
-        <p>No recipes found.</p>
-      )}
-      <div className={styles.buttons}>
-        <Button placeholder="Restart Quiz" onClick={onRestart} />
-        <Button placeholder="Done" href="/" />
       </div>
     </main>
   );

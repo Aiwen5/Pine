@@ -1,13 +1,19 @@
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    min-height: 80vh;
-    padding: 20px;
+    min-height: 100vh;
     text-align: center;
   }
-  
+
+  .quizContainer {
+    width: 430px;
+    height: 932px;
+    background-color: var(--bg);
+    align-self: center;
+}
+
   .title {
     margin-bottom: 50px;
   }
@@ -28,4 +34,10 @@
     top: 60px;
     width: 400px;
     margin-bottom: 70px;
+  }
+
+  .buttonContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
   }

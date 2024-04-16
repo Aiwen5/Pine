@@ -14,22 +14,24 @@ export default function LandingPage() {
         <link rel="icon" href="/Logo.ico" />
       </Head>
       <main className={`${styles.main}`}>
-        <h1 className={styles.title}>Welcome To</h1>
-        <Image src="/PineLogo.svg" alt="Pine Logo" width={300} height={300} />
-        <div className={styles.buttons}>
-        <Link href="/Home">
-          <Button 
-            placeholder="Get Started!"
-          />
-          </Link>
-          <Link href="/quiz">
-          <Button 
-            placeholder="Quiz Me"
-          />
-          </Link>
-          <Button 
-            placeholder="Tutorial"
-          />
+        <div className={styles.container}>
+          <h1 className={styles.title}>Welcome To</h1>
+          <Image src="/PineLogo.svg" alt="Pine Logo" width={300} height={300} />
+          <div className={styles.buttons}>
+          <Link href="/Home">
+            <Button 
+              placeholder="Get Started!"
+            />
+            </Link>
+            <Link href="/quiz">
+            <Button 
+              placeholder="Quiz Me"
+            />
+            </Link>
+            <Button 
+              placeholder="Tutorial"
+            />
+          </div>
         </div>
       </main>
     </>
