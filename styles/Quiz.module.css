@@ -9,7 +9,7 @@
 
   .quizContainer {
     width: 430px;
-    height: 932px;
+    min-height: 932px;
     background-color: var(--bg);
     align-self: center;
 }
