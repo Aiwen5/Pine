@@ -1,0 +1,29 @@
+.footer {
+    width: 430px;
+    max-height: 80px; 
+    background-color: var(--secondary);
+    color: #fff;
+    padding: 10px 0; 
+    text-align: center;
+    position: sticky;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    bottom: 0;
+  }
+  
+  .imageContainer img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-top-left-radius: 50px; 
+    border-top-right-radius: 50px;
+  }
+  
+  .imageContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    margin-top: 5px; 
+  }
+  
