@@ -1,6 +1,7 @@
 .nav {
     overflow: hidden;
     background-color: none;
+    width: 430px;
   }
   
   .navList {
@@ -13,7 +14,7 @@
   }
   
   .Logo {
-    width:100px;
+    width:80px;
     height:auto;
   }
   
@@ -39,4 +40,12 @@
   .active {
     background-color: #04AA6D;
   }
-  
+  .logoContainer {
+    align-items: center; 
+  }
+
+  .Back {
+    width: 20px; 
+    height: auto; 
+    margin-right: 10px; 
+  }
