@@ -6,9 +6,13 @@ const Header = () => {
     <header>
       <nav className={styles.nav}>
         <ul className={styles.navList}>
-        <li className={styles.Logo}><Link href="/home"><img src='/PineLogo.svg' alt="Pine Logo"/></Link></li>
-          <li className={styles.Menu}><Link href="/news">HambMenu</Link></li>
-          <li className={styles.Search}><Link href="/contact">Search</Link></li>
+        <li>
+            <Link href="/">
+              <div className={styles.logoContainer}>
+              <img src='/Back.svg' alt='back' className={styles.Back}/>
+                <img src='/PineLogo.svg' alt="Pine Logo" className={styles.Logo}/>
+              </div>
+            </Link></li>
         </ul>
       </nav>
     </header>
