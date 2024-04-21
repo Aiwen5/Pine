@@ -2,6 +2,8 @@ import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
 import Category from '@/components/Category';
 import Explore from '@/components/Explore';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   const data = [
@@ -44,8 +46,12 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.container}>
+          <Header/>
+        <div className={styles.message2}>
+              <p>Good {getGreeting()}</p>
+              <img src="/Logo.svg" alt="help icon" className={styles.help} />
+            </div>
           <div className={styles.expcontainer}>
-          <p className={styles.message2}>Good {getGreeting()}</p>
             <p className={styles.message}>For You</p>
             <Explore 
               imageURL={data[2].imageURL} 
@@ -77,6 +83,7 @@ export default function Home() {
               buttonText={data[3].buttonText} 
             />
           </div>
+          <Footer/>
         </div>
       </main>
     </>
