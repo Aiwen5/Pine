@@ -1,0 +1,15 @@
+.chartContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 410px;
+    height: 400px;
+    background-color: var(--bgAccent);
+    border-radius: 40px;
+}
+
+.chart {
+    position: 'relative';
+    width: '300px';
+    height: '300px';
+}

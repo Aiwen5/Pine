@@ -16,7 +16,7 @@ export default function LandingPage() {
       <main className={`${styles.main}`}>
         <div className={styles.container}>
           <h1 className={styles.title}>Welcome To</h1>
-          <Image src="/PineLogo.svg" alt="Pine Logo" width={300} height={300} />
+          <Image src="/PineLogo.svg" alt="Pine Logo" width={300} height={300} priority={true} />
           <div className={styles.buttons}>
           <Link href="/Home">
             <Button 
@@ -28,9 +28,11 @@ export default function LandingPage() {
               placeholder="Quiz Me"
             />
             </Link>
+            <Link href="/Description">
             <Button 
               placeholder="Tutorial"
             />
+            </Link>
           </div>
         </div>
       </main>
