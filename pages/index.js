@@ -28,7 +28,7 @@ export default function LandingPage() {
               placeholder="Quiz Me"
             />
             </Link>
-            <Link href="/Description">
+            <Link href="/description">
             <Button 
               placeholder="Tutorial"
             />
