@@ -1,13 +1,13 @@
 .footer {
     width: 430px;
     max-height: 80px; 
-    background-color: var(--secondary);
+    background-color: var(--bgAccent);
     color: #fff;
     padding: 10px 0; 
     text-align: center;
     position: sticky;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     bottom: 0;
   }
   
@@ -16,8 +16,8 @@
     height: 40px;
     margin-right: 20px;
     margin-left: 20px;
-    border-top-left-radius: 50px; 
-    border-top-right-radius: 50px;
+    border-top-left-radius: 30px; 
+    border-top-right-radius: 30px;
   }
   
   .imageContainer {
