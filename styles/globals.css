@@ -4,20 +4,35 @@
     --bg: #EFFFF8;
     --bgAccent: #C2EEE1;
 
-    --font-h1: 3.5em;
-    --font-h2: 2.5em;
-    --font-h3: 1.5em;
-    --font-h4: 1.25em;
-    --font-body: 14pt;
-    --font-body-bold: 16pt bold;
+    --font-h1-size: 30pt;
+    --font-h2-size: 23pt;
+    --font-body-size: 13pt;
+    --font-body-bold-size: 13pt;
+    --font-body-bold-weight: bold;
 
+    --font-family-h1: 'Oswald', sans-serif;
+    --font-family-default: 'Poppins', sans-serif;
 }
 
 body {
     margin: 0;
-
-    font-family: 'Poppins', 'sans';
+    font-family: var(--font-family-default);
     color: var(--primary);
+}
+
+h1 {
+    font-size: var(--font-h1-size);
+    font-family: var(--font-family-h1);
+}
+
+h2 {
+    font-size: var(--font-h2-size);
+    font-family: var(--font-family-h1);
+}
+
+.body-bold {
+    font-size: var(--font-body-bold-size);
+    font-weight: var(--font-body-bold-weight);
 }
 
 .quizContainer {

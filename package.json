@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "chart.js": "^4.4.2",
     "google-map-react": "^2.2.1",
     "lottie-web": "^5.12.2",
     "next": "^14.0.4",
     "node-fetch": "^3.3.2",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0"
   },
   "description": "## Created by - Evan Schatz - Daniel Der",
