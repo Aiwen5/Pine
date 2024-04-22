@@ -2,7 +2,7 @@
     width: 400px; 
     height: 175px; 
     position: relative;
-    border-radius: 10px; 
+    border-radius: 30px; 
     overflow: hidden; 
     margin-top: 10px;
   }
@@ -26,9 +26,6 @@
   }
   
   .description {
-    position: absolute;
-    top: 10px; 
-    left: 10px; 
     font-family: 'Poppins', sans-serif;
     font-size: var(--font-body-bold);
     color: var(--secondary);
@@ -39,15 +36,25 @@
   }
   
   .button {
-    position: absolute;
-    bottom: 10px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    padding: 8px 16px; 
+    width: 150px; 
+    height: 40px; 
+    border-radius: 20px; 
     background-color: var(--primary);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: var(--font-body-bold);
+    color: var(--bg);
+    border: none; 
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
+  
+  .button:active {
+    background-color: var(--secondary);
+    color: var(--primary); 
+  }
+  
