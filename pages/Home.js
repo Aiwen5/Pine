@@ -48,11 +48,11 @@ export default function Home() {
         <div className={styles.container}>
           <Header/>
         <div className={styles.message2}>
-              <p>Good {getGreeting()}</p>
+              <h1>Good {getGreeting()}</h1>
               <img src="/Logo.svg" alt="help icon" className={styles.help} />
             </div>
           <div className={styles.expcontainer}>
-            <p className={styles.message}>For You</p>
+            <h2 className={styles.message}>For You</h2>
             <Explore 
               imageURL={data[2].imageURL} 
               description={data[2].description} 
@@ -60,7 +60,7 @@ export default function Home() {
             />
           </div>
           <div className={styles.catcontainer}>
-            <p className={styles.message}>Explore</p>
+            <h2 className={styles.message}>Explore</h2>
             <p> </p>
             <Category 
               imageURL={data[0].imageURL} 
