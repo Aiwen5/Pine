@@ -4,6 +4,7 @@ import Category from '@/components/Category';
 import Explore from '@/components/Explore';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 export default function Home() {
   const data = [
@@ -39,7 +40,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Quiz</title>
+        <title>Home</title>
         <meta name="description" content="Created by Daniel Der & Evan Schatz" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -49,7 +50,10 @@ export default function Home() {
           <Header/>
         <div className={styles.message2}>
               <h1>Good {getGreeting()}</h1>
-              <img src="/Logo.svg" alt="help icon" className={styles.help} />
+              <a href='/FAQ'>FAQ</a>
+              <Link href="/Home">
+              <img src="/Info.svg" alt="help icon" className={styles.help} />
+              </Link>
             </div>
           <div className={styles.expcontainer}>
             <h2 className={styles.message}>For You</h2>
