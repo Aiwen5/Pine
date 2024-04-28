@@ -44,6 +44,9 @@ export default function Description() {
                             <Nutrition />
                         </div>
                     )}
+                    {showNutrition && (
+                        <div className={styles.backdrop} onClick={() => setShowNutrition(false)}></div>
+                    )}
                 </div>
             </main>
         </>
