@@ -1,6 +1,8 @@
 import DishInventory from '@/data/DishInventory';
 import Nutrition from '@/components/Nutrition/Nutrition';
 import Button from '@/components/Button';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 import styles from '@/styles/Description.module.css';
 import { useState } from 'react';
 
@@ -18,6 +20,7 @@ export default function Description() {
         <>
             <main className={styles.main}>
                 <div className={styles.descriptionContainer}>
+                    <Header />
                     <div className={styles.imageContainer}>
                         <img
                             src={image}
@@ -40,13 +43,17 @@ export default function Description() {
 
                     {showNutrition && (
                         <div className={styles.nutritionPopup}>
-                            <button className={styles.closeButton} onClick={() => setShowNutrition(false)}>X</button>
+                            <div className={styles.inline}>
+                                <h2 className={styles.popupTitle}>{name}</h2>
+                                <button className={styles.closeButton} onClick={() => setShowNutrition(false)}>X</button>
+                            </div>
                             <Nutrition />
                         </div>
                     )}
                     {showNutrition && (
                         <div className={styles.backdrop} onClick={() => setShowNutrition(false)}></div>
                     )}
+                    <Footer />
                 </div>
             </main>
         </>
