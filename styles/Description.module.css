@@ -1,4 +1,4 @@
-.main {
+  .main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,20 +58,25 @@
   .nutritionPopup {
     position: fixed;
     z-index: 10;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 410px;
-    height: 400px;
+    width: 398px;
+    height: 360px;
     background-color: var(--bgAccent);
     border-radius: 40px;
     box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25);
-  }
-  
+    }
+
+  .inline{
+    display: flex;
+    flex-direction: row;
+    }
+
   .backdrop {
     position: fixed;
     top: 0;
@@ -92,11 +97,21 @@
     background-color: transparent;
     border: none;
     font-size: 20pt;
+    position: relative;
+    left: 4.5em;
   }
 
   .dishName {
     font-size: var(--font-h2);
 
+  }
+
+  .popupTitle{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    left: 18px;
+    font-size: var(--font-h2-size);
   }
  
   .categories {
@@ -107,11 +122,10 @@
   }
 
   .category {
-
-  }
-  
-  .categoryText {
-    
+    padding: 5px;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    color: var(--bg)
   }
   
   .buttonContainer {
