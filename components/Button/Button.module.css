@@ -6,6 +6,7 @@
     color: var(--bg);
     border-color: var(--secondary);
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+    font-size: var(--font-body-bold-size);
 }
 
 .button:active {

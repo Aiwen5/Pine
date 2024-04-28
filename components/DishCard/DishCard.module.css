@@ -1,0 +1,32 @@
+.Feature {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.Rectangle4 {
+  width: 398px;
+  height: 240px;
+  position: absolute;
+  background: #C2EEE1;
+  border-radius: 41px;
+}
+
+.FeaturedDish {
+  position: absolute;
+  left: 169px;
+  top: 14px;
+  color: #2B3F47;
+  font-size: 30px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.Rectangle5 {
+  width: 122px;
+  height: 120.79px;
+  position: absolute;
+  left: 25px;
+  top: 39.60px;
+  border-radius: 20px;
+}
