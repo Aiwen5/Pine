@@ -2,6 +2,7 @@
     overflow: hidden;
     background-color: none;
     width: 430px;
+    margin-top: 80px;
   }
   
   .navList {
@@ -45,7 +46,6 @@
   }
 
   .Back {
-    width: 20px; 
+    width: 50px; 
     height: auto; 
-    margin-right: 10px; 
   }

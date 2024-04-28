@@ -8,16 +8,8 @@
     position: sticky;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    margin-top: 40px;
     bottom: 0;
-  }
-  
-  .imageContainer img {
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-    margin-left: 20px;
-    border-top-left-radius: 30px; 
-    border-top-right-radius: 30px;
   }
   
   .imageContainer {
@@ -27,3 +19,22 @@
     margin-top: 5px; 
   }
   
+  .image1 {
+    width: 80px; 
+    height: auto; 
+  }
+  
+  .image2 {
+    width: 80px; 
+    height: auto; 
+  }
+  
+  .image3 {
+    width: 90px; 
+    height: auto; 
+  }
+  
+  .image4 {
+    width: 80px; 
+    height: auto; 
+  }

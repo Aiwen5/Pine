@@ -43,7 +43,13 @@
   }
   
   .help {
-    width: 15px;
+    width: 100px;
     height: auto;
   }
   
+  .message2 a{
+    margin-left: 5px;
+    font-size: var(--font-body-bold-size);
+    color: var(--primary);
+    font-weight: var(--font-body-bold-weight);
+  }
