@@ -1,22 +1,29 @@
 import Link from 'next/link';
 import styles from './Header.module.css';
+import { useRouter } from 'next/router';
 
-const Header = () => {
+export default function Header(){
+  const router = useRouter();
+
+  const goBack = () => {
+    router.back();
+  }
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={styles.nav}>
         <ul className={styles.navList}>
-        <li>
-            <Link href="/">
-              <div className={styles.logoContainer}>
-              <img src='/Back.svg' alt='back' className={styles.Back}/>
+          <li onClick={goBack} className={styles.backButton}>
+            <img src='/Back.svg' alt='back' className={styles.backIcon} />
+          </li>
+          <li>
+            <Link href="/" legacyBehavior>
+              <a>
                 <img src='/PineLogo.svg' alt="Pine Logo" className={styles.Logo}/>
-              </div>
-            </Link></li>
+              </a>
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
   );
 }
-
-export default Header;

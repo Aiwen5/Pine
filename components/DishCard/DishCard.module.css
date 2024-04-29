@@ -3,10 +3,82 @@
   height: 240px;
   background-color: var(--bgAccent);
   border-radius: 41px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 24px;
 }
 
-.title{
-  left: 169px;
-  top: 14px;
-  position: relative;
+.dishImage {
+  width: 8em;
+  height: 8em;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-top: -32px; 
+  margin-right: 22px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  margin-top: 0;
+  text-align: left;
+  text-wrap: nowrap;
+  margin-bottom: 0;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.categories {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: left;
+  text-wrap: nowrap;
+}
+
+.category {
+  background-color: var(--secondary);
+  color: var(--bg);
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 0.7rem;
+}
+
+.time, .difficulty {
+  font-size: 0.8rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.findButton, .recipeButton {
+  background-color: var(--primary);
+  color: var(--bg);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+
+.findButton:hover, .recipeButton:hover {
+  background-color: var(--secondary);
 }
