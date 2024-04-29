@@ -8,17 +8,19 @@
     position: relative;
   }
 
-.tutorialcontainer {
+  .tutorialcontainer {
     width: 430px;
     min-height: 932px;
     background-color: var(--bg);
     align-self: center;
     position: relative;
-    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    display:grid;
 }
 
 .button{
-    width: 130px;
+    width: 191px;
     height: 49px;
     border-radius: 30px;
     background-color: var(--primary);
@@ -32,3 +34,27 @@
     background-color: var(--secondary);
     border-color: var(--primary)
 }
+.p0{
+    width:10px;
+    height:10px;
+    margin-right: 5px;
+    margin-left:5px;
+    margin-bottom: 10px;
+    background-color: var(--bgAccent);
+    color: var(--bgAccent);
+    border-radius: 20px; 
+  }
+  .p1{
+    background-color: var(--primary);
+    color: var(--primary);
+    width:20px;
+    height:10px;
+    margin-bottom: 10px;
+    border-radius: 20px; 
+  }
+  .p1::-webkit-progress-value {
+    background-color: var(--primary); 
+  }
+  .p1::-moz-progress-bar {
+    background-color: var(--primary); 
+  }

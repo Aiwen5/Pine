@@ -31,10 +31,14 @@ export default function T1({ selectedOption, onAnswerChange, onNext, onPrev }) {
             <p>Choose to pick it up for takeout or make it with our recipe</p>
         </div>
         <div className={styles.bar}>
-        <img className={styles.progressBar} src="/T2.png" alt="progress bar"></img>
+      <progress className={styles.p0} value={0} />
+      <progress className={styles.p1} value={1} />
+      <progress className={styles.p0} value={0} />
+      <progress className={styles.p0} value={0} />
         </div>
-      <Button placeholder="Back" onClick={onPrev}  />
-      <Button placeholder="Next Question" onClick={onNext} />
+        <div className={styles.buttoncontainer}>
+      <Button placeholder="Next" onClick={onNext} />
+      </div>
       </div>
       </main>
         </>
