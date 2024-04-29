@@ -16,7 +16,7 @@ export default function Header(){
             <img src='/Back.svg' alt='back' className={styles.backIcon} />
           </li>
           <li>
-            <Link href="/" legacyBehavior>
+            <Link href="/Home" legacyBehavior>
               <a>
                 <img src='/PineLogo.svg' alt="Pine Logo" className={styles.Logo}/>
               </a>

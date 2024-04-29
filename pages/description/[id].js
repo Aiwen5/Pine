@@ -26,6 +26,9 @@ export default function DishDescription() {
       <Head>
         <title>{dish.name} - Dish Description</title>
         <meta name="description" content={`Learn more about ${dish.name}`} />
+        <title>{dish.name} - Description</title>
+        <meta name="description" content={`Learn more about ${dish.name}`} />
+        <link rel="icon" href="/Logo.ico" />
       </Head>
       <main className={styles.main}>
         <div className={styles.descriptionContainer}>
