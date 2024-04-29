@@ -17,7 +17,11 @@
     padding: 20px;
 }
 
-.question h2{
+.head{
+    font-size: var(--font-h1-size);
+}
+
+.subhead{
 font-size: var(--font-h2-size);
 }
 

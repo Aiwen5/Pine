@@ -1,0 +1,34 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+  }
+
+.tutorialcontainer {
+    width: 430px;
+    min-height: 932px;
+    background-color: var(--bg);
+    align-self: center;
+    position: relative;
+    z-index: 1;
+}
+
+.button{
+    width: 130px;
+    height: 49px;
+    border-radius: 30px;
+    background-color: var(--primary);
+    color: var(--bg);
+    border-color: var(--secondary);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+    font-size: var(--font-body-bold-size);
+    }
+    
+ .button:active {
+    background-color: var(--secondary);
+    border-color: var(--primary)
+}

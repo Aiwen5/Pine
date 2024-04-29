@@ -1,0 +1,18 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+  }
+
+  .tutorialcontainer {
+    width: 430px;
+    min-height: 932px;
+    background-color: var(--bg);
+    align-self: center;
+    position: relative;
+    z-index: 1;
+}
