@@ -4,3 +4,9 @@
   background-color: var(--bgAccent);
   border-radius: 41px;
 }
+
+.title{
+  left: 169px;
+  top: 14px;
+  position: relative;
+}
