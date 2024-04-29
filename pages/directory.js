@@ -3,5 +3,8 @@ import DishCard from '@/components/DishCard/DishCard';
 import DishInventory from '@/data/DishInventory';
 
 export default function directory() {
-  <DishCard dish={DishInventory} />
+  return(
+    <DishCard />
+  )
+
 }
