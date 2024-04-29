@@ -51,9 +51,6 @@ export default function Home() {
         <div className={styles.message2}>
               <h1>Good {getGreeting()}</h1>
               <a href='/FAQ'>FAQ</a>
-              <Link href="/Home">
-              <img src="/Info.svg" alt="help icon" className={styles.help} />
-              </Link>
             </div>
           <div className={styles.expcontainer}>
             <h2 className={styles.message}>For You</h2>

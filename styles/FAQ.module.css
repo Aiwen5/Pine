@@ -1,0 +1,26 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%; 
+    max-width: 430px;
+    height: 932px; 
+    background-color: var(--bg);
+    margin: 0 auto; 
+}
+
+
+.content {
+    max-width: 430px; 
+    padding: 20px;
+}
+
+.question h2{
+font-size: var(--font-h2-size);
+}
+
+.question{
+    margin-bottom: 30px;
+}
