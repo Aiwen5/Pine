@@ -35,14 +35,14 @@ export default function Nutrition() {
                     label: 'Grams',
                     data: data,
                     backgroundColor: [
-                        'rgba(255, 99, 132, 0.5)',
-                        'rgba(54, 162, 235, 0.5)',
-                        'rgba(255, 206, 86, 0.5)'
+                        'rgba(43, 63, 71, 0.60)',
+                        'rgba(70, 117, 124, 0.60)',
+                        'rgba(239, 255, 248, 0.60)'
                     ],
                     borderColor: [
-                        'rgb(255, 99, 132)',
-                        'rgb(54, 162, 235)',
-                        'rgb(255, 206, 86)'
+                        'rgb(43, 63, 71)',
+                        'rgb(70, 117, 124)',
+                        'rgb(239, 255, 248)'
                     ],
                     borderWidth: 1
                 }
