@@ -16,17 +16,6 @@ export default function Directory() {
 
   return (
     <>
-    <main className={styles.main}>
-      <div className={styles.directoryContainer}>
-        <Header />
-        <h1 className={styles.title}>Category</h1>
-        {filteredDishes.map(dish => (
-          <DishCard key={dish.id} dish={dish} />
-        ))}
-        <Footer />
-      </div>
-    </main>
-    <>
       <Head>
         <title>Pine — Dish Directory</title>
         <meta name="description" content="Dish directory." />
