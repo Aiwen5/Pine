@@ -4,12 +4,10 @@ import {
     ArcElement,
     Tooltip,
     Legend,
-    RadialLinearScale
+    RadialLinearScale,
 } from 'chart.js';
 import { useEffect, useState } from "react";
-import DishInventory from '@/data/DishInventory';
 import styles from '@/components/Nutrition/Nutrition.module.css';
-
 
 ChartJS.register(
     ArcElement,
@@ -18,7 +16,7 @@ ChartJS.register(
     Legend
 );
 
-export default function Nutrition() {
+export default function Nutrition({ nutritionData }) {
     const [chartData, setChartData] = useState({
         datasets: []
     });
@@ -26,58 +24,53 @@ export default function Nutrition() {
     const [chartOptions, setChartOptions] = useState({});
 
     useEffect(() => {
-        const data = [DishInventory.nutrition.protein, DishInventory.nutrition.carbs, DishInventory.nutrition.fat];
-
-        setChartData({
-            labels: ["Protein", "Carbs", "Fat"],
-            datasets: [
-                {
-                    label: 'Grams',
-                    data: data,
-                    backgroundColor: [
-                        'rgba(43, 63, 71, 0.60)',
-                        'rgba(70, 117, 124, 0.60)',
-                        'rgba(239, 255, 248, 0.60)'
-                    ],
-                    borderColor: [
-                        'rgb(43, 63, 71)',
-                        'rgb(70, 117, 124)',
-                        'rgb(239, 255, 248)'
-                    ],
-                    borderWidth: 1
-                }
-            ]
-        });
-
-        setChartOptions({
-            scales: {
-                r: {
-                    angleLines: {
-                        display: false
-                    },
-                    ticks: {
-                        display: true,
-                        backdropColor: 'transparent'
+        if (nutritionData) {
+            setChartData({
+                labels: ["Protein", "Carbs", "Fat"],
+                datasets: [
+                    {
+                        label: 'Nutrition',
+                        data: [nutritionData.protein, nutritionData.carbs, nutritionData.fat],
+                        backgroundColor: [
+                            'rgba(43, 63, 71, 0.60)',
+                            'rgba(70, 117, 124, 0.60)',
+                            'rgba(239, 255, 248, 0.60)'
+                        ],
+                        borderColor: [
+                            'rgb(43, 63, 71)',
+                            'rgb(70, 117, 124)',
+                            'rgb(239, 255, 248)'
+                        ],
+                        borderWidth: 1
                     }
-                }
-            },
-            plugins: {
-                legend: {
-                    position: 'top'
+                ]
+            });
+
+            setChartOptions({
+                scales: {
+                    r: {
+                        angleLines: {
+                            display: false
+                        },
+                    }
                 },
-                tooltip: {
-                    enabled: true
+                plugins: {
+                    legend: {
+                        position: 'top'
+                    },
+                    tooltip: {
+                        enabled: true
+                    },
+                    title: {
+                        display: true,
+                        text: 'Nutrition Chart'
+                    }
                 },
-                title: {
-                    display: true,
-                    text: DishInventory.name
-                }
-            },
-            responsive: true,
-            maintainAspectRatio: false
-        });
-        
-    }, []);
+                responsive: true,
+                maintainAspectRatio: false
+            });
+        }
+    }, [nutritionData]);
 
     return (
         <div className={styles.chartContainer}>
@@ -86,4 +79,4 @@ export default function Nutrition() {
             </div>
         </div>
     );
-};
+}
