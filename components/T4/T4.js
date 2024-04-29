@@ -10,11 +10,21 @@ export default function T4({ selectedOption, onAnswerChange, onPrev }) {
         onAnswerChange('T4', event.target.value);
       };
 const TutorialButton = ({ text, onClick, href }) => {
+    if (href) {
         return (
+          <Link href={href}>
             <button className={styles.button} onClick={onClick}>
-                {text}
-            </button>
+            {text}
+          </button>
+          </Link>
         );
+      } else {
+        return (
+          <button className={styles.button} onClick={onClick}>
+            {text}
+          </button>
+        );
+      }
     };
 
     return(
