@@ -3,17 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    width: 100%; 
-    max-width: 430px;
-    height: 932px; 
+    width: 430px;
+    min-height: 932px; 
     background-color: var(--bg);
     margin: 0 auto; 
 }
 
 
 .content {
-    max-width: 430px; 
     padding: 20px;
 }
 
