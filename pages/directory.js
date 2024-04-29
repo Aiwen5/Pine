@@ -15,6 +15,7 @@ export default function Directory() {
   ) : DishInventory;
 
   return (
+    <>
     <main className={styles.main}>
       <div className={styles.directoryContainer}>
         <Header />
