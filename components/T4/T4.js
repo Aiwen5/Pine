@@ -4,7 +4,7 @@ import Head from 'next/head';
 import styles from './T4.module.css'; 
 import Button from '../Button';
 
-export default function T4({ selectedOption, onAnswerChange, onPrev }) {
+export default function T4({ onAnswerChange,}) {
 
  const handleOptionChange = (event) => {
         onAnswerChange('T4', event.target.value);
@@ -37,9 +37,6 @@ const TutorialButton = ({ text, onClick, href }) => {
       </Head>
       <main className={styles.main}>
       <div className={styles.tutorialcontainer}>
-      <div className={styles.SkipSection}>
-        <a className={styles.skip} href="/">Skip</a>
-        </div>
         <div className={styles.imagecontainer}>
             <img src='/Step4.svg' alt='Step1'></img>
         </div>
@@ -48,11 +45,15 @@ const TutorialButton = ({ text, onClick, href }) => {
             <p>Add the dish to your favourites page to easily find it again</p>
         </div>
         <div className={styles.bar}>
-        <img className={styles.progressBar} src="/T4.png" alt="progress bar"></img>
+      <progress className={styles.p0} value={0} />
+      <progress className={styles.p0} value={0} />
+      <progress className={styles.p0} value={0} />
+      <progress className={styles.p1} value={1} />
         </div>
-      <TutorialButton text="Back" onClick={onPrev} />
-      <TutorialButton text="Complete" href="/"/>
+        <div className={styles.buttoncontainer}>
       <TutorialButton text="Take The Quiz" href="/quiz"/>
+      <TutorialButton text="Done" href="/"/>
+      </div>
       </div>
       </main>
         </>
