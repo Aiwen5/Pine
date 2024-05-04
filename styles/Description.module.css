@@ -66,7 +66,7 @@
     align-items: center;
     flex-direction: column;
     width: 398px;
-    height: 360px;
+    min-height: 360px;
     background-color: var(--bgAccent);
     border-radius: 40px;
     box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25);
@@ -112,6 +112,7 @@
     text-align: center;
     left: 18px;
     font-size: var(--font-h2-size);
+    margin-top: 15px;
   }
  
   .categories {
