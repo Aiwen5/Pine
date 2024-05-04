@@ -1,10 +1,11 @@
+import React from "react";
 import Button from "../Button";
 import RadioButton from "@/components/RadioButton"; 
 import styles from "@/styles/Quiz.module.css";
 
 export default function Q2({ selectedOption, onAnswerChange, onNext, onPrev }) {
-  const handleOptionChange = (event) => {
-    onAnswerChange('Q2', event.target.value);
+  const handleOptionChange = (value) => {
+    onAnswerChange('Q2', value);
   };
 
   return (
@@ -17,7 +18,7 @@ export default function Q2({ selectedOption, onAnswerChange, onNext, onPrev }) {
                     label="Just living life"
                     name="healthGoals"
                     value="living life"
-                    checked={selectedOption}
+                    checked={selectedOption === "living life"}
                     onChange={handleOptionChange}
                 />
                 
@@ -25,7 +26,7 @@ export default function Q2({ selectedOption, onAnswerChange, onNext, onPrev }) {
                     label="Lose weight"
                     name="healthGoals"
                     value="losing weight"
-                    checked={selectedOption}
+                    checked={selectedOption === "losing weight"}
                     onChange={handleOptionChange}
                 />
                 
@@ -33,7 +34,7 @@ export default function Q2({ selectedOption, onAnswerChange, onNext, onPrev }) {
                     label="Gain muscle"
                     name="healthGoals"
                     value="gaining some muscle"
-                    checked={selectedOption}
+                    checked={selectedOption === "gaining some muscle"}
                     onChange={handleOptionChange}
                 />
                 
@@ -41,7 +42,7 @@ export default function Q2({ selectedOption, onAnswerChange, onNext, onPrev }) {
                     label="A nice balance"
                     name="healthGoals"
                     value="keeping a nice balance"
-                    checked={selectedOption}
+                    checked={selectedOption === "keeping a nice balance"}
                     onChange={handleOptionChange}
                 />
             </section>

@@ -3,10 +3,12 @@ import Button from "../Button";
 import styles from "@/components/Result/Result.module.css";
 import LottieAnimation from '@/components/Animation/LottieAnimation';
 import animationData from '@/animations/panTree.json';
+import { useRouter } from 'next/router';
 
 export default function Result({ answers, onRestart }) {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const router = useRouter();
 
   useEffect(() => {
     const apiKey = process.env.NEXT_PUBLIC_SPOONACULAR_API_KEY;
@@ -34,6 +36,13 @@ export default function Result({ answers, onRestart }) {
 
   }, [answers.Q1, answers.Q4]);
 
+  const doneQuiz = () => {
+    router.push({
+      pathname: '/Home',
+      query: { q4Option: answers['Q4'] }
+    });
+  };
+
   return (
     <main className={styles.main}>
       <div className={styles.container}>
@@ -58,7 +67,7 @@ export default function Result({ answers, onRestart }) {
         )}
         <div className={styles.buttons}>
           <Button placeholder="Restart Quiz" onClick={onRestart} />
-          <Button placeholder="Done" href="/" />
+          <Button placeholder="Done" onClick={doneQuiz} />
         </div>
       </div>
     </main>
