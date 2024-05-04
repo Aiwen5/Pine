@@ -1,10 +1,11 @@
+import React from "react";
 import Button from "../Button";
 import RadioButton from "@/components/RadioButton"; 
 import styles from "@/styles/Quiz.module.css";
 
 export default function Q1({ selectedOption, onAnswerChange, onNext }) {
-  const handleOptionChange = (event) => {
-    onAnswerChange('Q1', event.target.value);
+  const handleOptionChange = (value) => {
+    onAnswerChange('Q1', value);
   };
 
   return (
@@ -17,7 +18,7 @@ export default function Q1({ selectedOption, onAnswerChange, onNext }) {
                     label="N/A"
                     name="dietaryRestrictions"
                     value="everything"
-                    checked={selectedOption}
+                    checked={selectedOption === "everything"}
                     onChange={handleOptionChange}
                 />
                 
@@ -25,7 +26,7 @@ export default function Q1({ selectedOption, onAnswerChange, onNext }) {
                     label="Vegan"
                     name="dietaryRestrictions"
                     value="vegan"
-                    checked={selectedOption}
+                    checked={selectedOption === "vegan"}
                     onChange={handleOptionChange}
                 />
 
@@ -33,7 +34,7 @@ export default function Q1({ selectedOption, onAnswerChange, onNext }) {
                     label="Vegetarian"
                     name="dietaryRestrictions"
                     value="vegetarian"
-                    checked={selectedOption}
+                    checked={selectedOption === "vegetarian"}
                     onChange={handleOptionChange}
                 />
                 
@@ -41,7 +42,7 @@ export default function Q1({ selectedOption, onAnswerChange, onNext }) {
                     label="Gluten free"
                     name="dietaryRestrictions"
                     value="gluten free"
-                    checked={selectedOption}
+                    checked={selectedOption === "gluten free"}
                     onChange={handleOptionChange}
                 />
                 
@@ -49,7 +50,7 @@ export default function Q1({ selectedOption, onAnswerChange, onNext }) {
                     label="Halal"
                     name="dietaryRestrictions"
                     value="halal"
-                    checked={selectedOption}
+                    checked={selectedOption === "halal"}
                     onChange={handleOptionChange}
                 />
 
@@ -57,7 +58,7 @@ export default function Q1({ selectedOption, onAnswerChange, onNext }) {
                     label="Pescetarian"
                     name="dietaryRestrictions"
                     value="Pescetarian"
-                    checked={selectedOption}
+                    checked={selectedOption === "Pescetarian"}
                     onChange={handleOptionChange}
                 />
             </section>
@@ -69,5 +70,3 @@ export default function Q1({ selectedOption, onAnswerChange, onNext }) {
     </main>
   );
 }
-
-  

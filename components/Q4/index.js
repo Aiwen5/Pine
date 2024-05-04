@@ -1,14 +1,15 @@
+import React from "react";
 import Button from "../Button";
 import RadioButton from "@/components/RadioButton"; 
 import styles from "@/styles/Quiz.module.css";
 
 export default function Q4({ selectedOption, onAnswerChange, onNext, onPrev }) {
-  const handleOptionChange = (event) => {
-    onAnswerChange('Q4', event.target.value);
+  const handleOptionChange = (value) => {
+    onAnswerChange('Q4', value);
   };
 
   return (
-    <main className={`${styles.main}`}>
+    <main className={styles.main}>
         <div className={styles.quizContainer}>
             <img className={styles.progressBar} src="/ProgressQ4.png" alt="progress bar"></img>
             <h1 className="title">What is your favorite type of cuisine?</h1>
@@ -17,7 +18,7 @@ export default function Q4({ selectedOption, onAnswerChange, onNext, onPrev }) {
                     label="Italian"
                     name="cuisine"
                     value="Italian"
-                    checked={selectedOption}
+                    checked={selectedOption === "Italian"}
                     onChange={handleOptionChange}
                 />
             
@@ -25,7 +26,7 @@ export default function Q4({ selectedOption, onAnswerChange, onNext, onPrev }) {
                     label="Indian"
                     name="cuisine"
                     value="Indian"
-                    checked={selectedOption}
+                    checked={selectedOption === "Indian"}
                     onChange={handleOptionChange}
                 />
                 
@@ -33,7 +34,7 @@ export default function Q4({ selectedOption, onAnswerChange, onNext, onPrev }) {
                     label="American"
                     name="cuisine"
                     value="American"
-                    checked={selectedOption}
+                    checked={selectedOption === "American"}
                     onChange={handleOptionChange}
                 />
                 
@@ -41,7 +42,7 @@ export default function Q4({ selectedOption, onAnswerChange, onNext, onPrev }) {
                     label="Asian"
                     name="cuisine"
                     value="Asian"
-                    checked={selectedOption}
+                    checked={selectedOption === "Asian"}
                     onChange={handleOptionChange}
                 />
 
@@ -49,7 +50,7 @@ export default function Q4({ selectedOption, onAnswerChange, onNext, onPrev }) {
                     label="Mexican"
                     name="cuisine"
                     value="Mexican"
-                    checked={selectedOption}
+                    checked={selectedOption === "Mexican"}
                     onChange={handleOptionChange}
                 />
             </section>

@@ -1,10 +1,11 @@
+import React from "react";
 import Button from "../Button";
 import RadioButton from "@/components/RadioButton"; 
 import styles from "@/styles/Quiz.module.css";
 
 export default function Q3({ selectedOption, onAnswerChange, onNext, onPrev }) {
-  const handleOptionChange = (event) => {
-    onAnswerChange('Q3', event.target.value);
+  const handleOptionChange = (value) => {
+    onAnswerChange('Q3', value);
   };
 
   return (
@@ -17,7 +18,7 @@ export default function Q3({ selectedOption, onAnswerChange, onNext, onPrev }) {
                     label="I can boil pasta"
                     name="cookingSkills"
                     value="boil pasta"
-                    checked={selectedOption}
+                    checked={selectedOption === "boil pasta"}
                     onChange={handleOptionChange}
                 />
                 
@@ -25,7 +26,7 @@ export default function Q3({ selectedOption, onAnswerChange, onNext, onPrev }) {
                     label="I make a mean omlette"
                     name="cookingSkills"
                     value="make a mean omlette"
-                    checked={selectedOption}
+                    checked={selectedOption === "make a mean omlette"}
                     onChange={handleOptionChange}
                 />
                 
@@ -33,7 +34,7 @@ export default function Q3({ selectedOption, onAnswerChange, onNext, onPrev }) {
                     label="I'm a home cook"
                     name="cookingSkills"
                     value="cook!"
-                    checked={selectedOption}
+                    checked={selectedOption === "cook!"}
                     onChange={handleOptionChange}
                 />
                 
@@ -41,7 +42,7 @@ export default function Q3({ selectedOption, onAnswerChange, onNext, onPrev }) {
                     label="I could go pro!"
                     name="cookingSkills"
                     value="could go pro!"
-                    checked={selectedOption}
+                    checked={selectedOption === "could go pro!"}
                     onChange={handleOptionChange}
                 />
             </section>
