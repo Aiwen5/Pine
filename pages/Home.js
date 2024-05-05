@@ -32,41 +32,49 @@ const data = [
     imageURL: "https://www.justonecookbook.com/wp-content/uploads/2023/09/Onigiri-Japanese-Rice-Balls-2053-II.jpg",
     description: "Japanese Cuisine",
     buttonText: "Japanese",
+    buttonLink: "/japanese-page"
   },
   {
     imageURL: "https://images.pexels.com/photos/4049145/pexels-photo-4049145.jpeg?cs=srgb&dl=pexels-prasannabaarathi-4049145.jpg&fm=jpg",
     description: "Italian Cuisine",
     buttonText: "Italian",
+    buttonLink: "/italian-page"
   },
   {
     imageURL: "https://freedesignfile.com/upload/2017/10/Homemade-tasty-tacos-Stock-Photo-06.jpg",
     description: "Mexican Cuisine",
     buttonText: "Mexican",
+    buttonLink: "/mexican-page"
   },
   {
     imageURL: "https://spicysouthernkitchen.com/wp-content/uploads/sweet-and-sour-chicken-1.jpg",
     description: "Chinese Cuisine",
     buttonText: "Chinese",
+    buttonLink: "/chinese-page"
   },
   {
     imageURL: "https://spicysouthernkitchen.com/wp-content/uploads/sweet-and-sour-chicken-1.jpg",
-    description: "Mexican Cuisine", 
-    buttonText: "Mexican (Duplicate)", 
+    description: "Italian Cuisine", 
+    buttonText: "Italian", 
+    buttonLink: "/italian-page"
   },
   {
     imageURL: "https://spicysouthernkitchen.com/wp-content/uploads/sweet-and-sour-chicken-1.jpg",
     description: "Indian Cuisine",
     buttonText: "Indian",
+    buttonLink: "/indian-page"
   },
   {
     imageURL: "https://spicysouthernkitchen.com/wp-content/uploads/sweet-and-sour-chicken-1.jpg",
     description: "American Cuisine",
     buttonText: "American",
+    buttonLink: "/american-page"
   },
   {
     imageURL: "https://spicysouthernkitchen.com/wp-content/uploads/sweet-and-sour-chicken-1.jpg",
     description: "Asian Cuisine",
     buttonText: "Asian",
+    buttonLink: "/asian-page"
   },
 ];
 
@@ -103,6 +111,7 @@ const data = [
                 imageURL={(data.find(item => item.buttonText === selectedOption) || {}).imageURL}
                 description={(data.find(item => item.buttonText === selectedOption) || {}).description}
                 buttonText={(data.find(item => item.buttonText === selectedOption) || {}).buttonText}
+                buttonLink={(data.find(item => item.buttonText === selectedOption) || {}).buttonLink}
               />
             ) : (
               <Link href="/quiz">

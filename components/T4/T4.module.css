@@ -52,9 +52,20 @@
     margin-bottom: 10px;
     border-radius: 20px; 
   }
+  .p0::-webkit-progress-value {
+    background-color: var(--bgAccent); 
+    border-radius: 20px;
+  }
+  .p0::-moz-progress-bar {
+    background-color: var(--bgAccent); 
+    border-radius: 20px;
+  }
   .p1::-webkit-progress-value {
     background-color: var(--primary); 
+    border-radius: 20px;
   }
   .p1::-moz-progress-bar {
     background-color: var(--primary); 
+    border-radius: 20px;
   }
+  
