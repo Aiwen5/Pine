@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { useRouter } from 'next/router';
+import Button from "@/components/Button";
 
 export default function Home() {
   const router = useRouter(); 
@@ -21,6 +22,10 @@ export default function Home() {
       console.log("Selected Option:", q4Option);
     }
   }, [router.query]);
+
+  const handleExploreClick = () => {
+    router.push('/Quiz'); 
+  };
 
 const data = [
   {
@@ -45,8 +50,8 @@ const data = [
   },
   {
     imageURL: "https://spicysouthernkitchen.com/wp-content/uploads/sweet-and-sour-chicken-1.jpg",
-    description: "Mexican Cuisine", // Duplicate removed
-    buttonText: "Mexican (Duplicate)", // Modified to avoid duplicate
+    description: "Mexican Cuisine", 
+    buttonText: "Mexican (Duplicate)", 
   },
   {
     imageURL: "https://spicysouthernkitchen.com/wp-content/uploads/sweet-and-sour-chicken-1.jpg",
@@ -93,12 +98,16 @@ const data = [
           </div>
           <div className={styles.expcontainer}>
             <h2 className={styles.message}>For You</h2>
-            {selectedOption && (
+            {selectedOption ? (
               <Explore
                 imageURL={(data.find(item => item.buttonText === selectedOption) || {}).imageURL}
                 description={(data.find(item => item.buttonText === selectedOption) || {}).description}
                 buttonText={(data.find(item => item.buttonText === selectedOption) || {}).buttonText}
               />
+            ) : (
+              <Link href="/quiz">
+              <Button className={styles.exploreButton} onClick={handleExploreClick} placeholder="Start Quiz"></Button>
+              </Link>
             )}
           </div>
           <div className={styles.catcontainer}>
