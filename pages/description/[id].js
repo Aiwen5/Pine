@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import DishInventory from '@/data/DishInventory';
 import Nutrition from '@/components/Nutrition/Nutrition';
 import Button from '@/components/Button';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import styles from '@/styles/Description.module.css';
@@ -51,8 +52,12 @@ export default function DishDescription() {
             </div>
             <p className={styles.dishDescription}>{dish.description}</p>
             <div className={styles.buttonContainer}>
-              <Button placeholder="Find Near Me" />
-              <Button placeholder="Recipe" />
+                <Link href={`/ingredients/${dish.id}`} passHref>
+                  <Button placeholder="Ingredients" />
+                </Link>
+                <Link href={`/directions/${dish.id}`} passHref>
+                  <Button placeholder="Instructions" />
+                </Link>
             </div>
           </div>
           {showNutrition && (

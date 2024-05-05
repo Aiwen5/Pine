@@ -23,8 +23,14 @@ export default function DishCard({ dish }) {
                         <span key={index} className={styles.category}>{category}</span>
                         ))}
                     </div>
-                    <div className={styles.time}>{dish.time} mins</div>
-                    <div className={styles.difficulty}>{dish.difficulty}</div>
+                    <div className={styles.time}>
+                        <img src='./Time.svg'></img>
+                        {dish.time} mins
+                    </div>
+                    <div className={styles.difficulty}>
+                        <img src='./Difficulty.svg'></img>
+                        {dish.difficulty}
+                    </div>
                 </div>
             </div>
             <div className={styles.actions}>

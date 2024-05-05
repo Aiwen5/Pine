@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import DishInventory from '@/data/DishInventory';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import styles from '@/styles/Ingredients.module.css';
+import styles from '@/styles/Directions.module.css';
 import LottieAnimation from '@/components/Animation/LottieAnimation';
 import animationData from '@/animations/panTree.json';
 
@@ -25,12 +25,12 @@ export default function Ingredients() {
             <img src={dish.image} alt={dish.name} className={styles.dishImage} />
           </div>
           <div className={styles.informationContainer}>
-            <h1>{dish.name} Ingredients</h1>
-            <ul>
-              {dish.ingredients.map((ingredient, index) => (
-                <li key={index}>{ingredient}</li>
+            <h1>How To Make {dish.name}</h1>
+            <ol>
+              {dish.steps.map((step, index) => (
+                <li key={index}>{step}</li>
               ))}
-            </ul>
+            </ol>
           </div>
           <Footer />
         </div>
