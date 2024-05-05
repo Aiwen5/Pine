@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 430px;
+  min-height: 932px;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.informationContainer {
+  max-width: 430px;
+  position: relative;
+  background: var(--bg);
+  border-top-left-radius: 41px;
+  border-top-right-radius: 41px;
+  top: -50px;
+  padding: 30px;
+  text-align: left;
+}
+
+.imageContainer img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  mask-image: linear-gradient(to top, black 70%, transparent 100%);
+}

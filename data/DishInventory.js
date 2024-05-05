@@ -43,7 +43,7 @@ const DishInventory = [
     time: 30,
     difficulty: "Medium",
     description: "Margherita Pizza is a simple yet delicious Italian pizza, featuring a classic combination of fresh tomato sauce, mozzarella cheese, fresh basil, and a drizzle of olive oil. It's a testament to the beauty of Italian cuisine with its crispy crust and vibrant flavors.",
-    categories: ["Italian", "Vegetarian", "Baking"],
+    categories: ["Italian", "Vegetarian"],
     image: "/images/MargheritaPizza.jpg",
     steps: [
       "Prepare the dough: Combine flour, yeast, sugar, salt, and water in a large mixing bowl. Knead until smooth and elastic, then let it rise for 1 hour.",
@@ -60,7 +60,7 @@ const DishInventory = [
       "1/2 tsp sugar",
       "3/4 cup warm water",
       "1/2 tsp salt",
-      "1 can (14 oz) of whole peeled tomatoes",
+      "1 can (14 oz) whole peeled tomatoes",
       "1 garlic clove",
       "Salt to taste",
       "Olive oil",
@@ -81,7 +81,7 @@ const DishInventory = [
     time: 15,
     difficulty: "Easy",
     description: "Caesar Salad is a classic American salad with romaine lettuce and croutons dressed with lemon juice, olive oil, egg, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, and black pepper. It's a fresh, tangy, and creamy salad that's perfect as a side dish or a light meal.",
-    categories: ["Salad", "American", "Low Calories"],
+    categories: ["Salad", "American"],
     image: "/images/CaesarSalad.jpg",
     steps: [
       "Wash and dry romaine lettuce, then tear into bite-sized pieces.",
@@ -118,7 +118,7 @@ const DishInventory = [
     time: 30,
     difficulty: "Medium",
     description: "Tacos al Pastor is a popular Mexican street food dish featuring marinated pork that's traditionally cooked on a vertical spit. The flavorful pork is served on small tortillas and often topped with pineapple, onions, and cilantro.",
-    categories: ["Mexican", "Street Food", "Tacos"],
+    categories: ["Mexican", "Street Food"],
     image: "/images/TacosAlPastor.jpg",
     steps: [
       "Marinate the pork with traditional spices",
@@ -148,7 +148,7 @@ const DishInventory = [
     time: 25,
     difficulty: "Medium",
     description: "Kung Pao Chicken is a classic Sichuan dish known for its spicy and bold flavors, combining marinated chicken with a tangy sauce, peanuts, and chili peppers. It's a stir-fried dish that's a staple in both Chinese restaurants and household kitchens.",
-    categories: ["Chinese", "Spicy", "Stir Fry"],
+    categories: ["Chinese", "Spicy"],
     image: "/images/KungPaoChicken.jpg",
     steps: [
       "Marinate the chicken in soy sauce and sherry",
@@ -403,7 +403,7 @@ const DishInventory = [
     time: 20,
     difficulty: "Easy",
     description: "Pesto Pasta is a simple yet vibrant dish, often made with fresh basil pesto, which is a blend of basil, pine nuts, garlic, Parmesan cheese, and olive oil.",
-    categories: ["Easy", "Italian", "Pasta"],
+    categories: ["Italian", "Pasta"],
     image: "/images/PestoPasta.jpg",
     steps: [
       "Boil pasta in salted water until al dente.",
@@ -499,7 +499,7 @@ const DishInventory = [
     time: 30,
     difficulty: "Easy",
     description: "Beef and Broccoli is a classic Chinese stir-fry dish with tender strips of beef and fresh broccoli in a savory sauce.",
-    categories: ["Easy", "Chinese", "Stir Fry"],
+    categories: ["Chinese", "Stir Fry"],
     image: "/images/BeefAndBroccoli.jpeg",
     steps: [
       "Slice beef into thin strips and marinate in a mixture of soy sauce, sesame oil, and cornstarch.",
@@ -534,7 +534,7 @@ const DishInventory = [
     time: 40,
     difficulty: "Medium",
     description: "Sweet and Sour Pork is a popular dish with a perfect balance of sweet and tangy flavors, featuring crispy pork pieces coated in a colorful sauce with pineapple and bell peppers.",
-    categories: ["Medium", "Chinese", "Fried"],
+    categories: ["Chinese", "Fried"],
     image: "/images/SweetAndSourPork.jpeg",
     steps: [
       "Cut pork into bite-sized pieces and coat with seasoned cornstarch.",
@@ -569,7 +569,7 @@ const DishInventory = [
     time: 45,
     difficulty: "Medium",
     description: "General Tso's Chicken is a sweet and spicy deep-fried chicken dish that is popularly served in North American Chinese restaurants.",
-    categories: ["Medium", "Chinese", "Chicken"],
+    categories: ["Chinese", "Chicken"],
     image: "/images/GeneralTsosChicken.jpeg",
     steps: [
       "Cut chicken thighs into chunks and marinate in soy sauce and egg white, then dredge in cornstarch.",
