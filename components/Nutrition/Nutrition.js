@@ -75,7 +75,7 @@ export default function Nutrition({ nutritionData }) {
     return (
         <div className={styles.chartContainer}>
             <div className={styles.caloriesInfo}>
-                <h4>Calories: {nutritionData.calories}</h4>
+                <h4>Calories Per Serving: {nutritionData.calories}</h4>
             </div>
             <div className={styles.chart}>
                 <PolarArea data={chartData} options={chartOptions} />

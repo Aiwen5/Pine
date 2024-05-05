@@ -20,8 +20,8 @@
   max-width: 430px;
   position: relative;
   background: var(--bg);
-  border-top-left-radius: 41px;
-  border-top-right-radius: 41px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   top: -50px;
   padding: 30px;
   text-align: left;
