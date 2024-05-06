@@ -27,6 +27,8 @@ export default function Home() {
     router.push('/quiz'); 
   };
 
+  
+
 const data = [
   {
     imageURL: "https://www.justonecookbook.com/wp-content/uploads/2023/09/Onigiri-Japanese-Rice-Balls-2053-II.jpg",

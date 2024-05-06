@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import styles from './Category.module.css'; 
 
-export default function Category({ imageURL, description, buttonText, onClick }) {
-  const href = `/directory?category=${encodeURIComponent(buttonText)}`;
+export default function Category({ imageURL, description, buttonText }) {
+  const categoryLink = `/directory?category=${encodeURIComponent(buttonText)}`;
 
   return (
     <div className={styles.card}>
@@ -11,8 +11,8 @@ export default function Category({ imageURL, description, buttonText, onClick })
         <div className={styles.description}>
           <h5 className="card-title">{description}</h5>
         </div>
-        <Link href={href} passHref>
-          <button onClick={onClick} className={`btn btn-primary ${styles.button}`}>{buttonText}</button>
+        <Link href={categoryLink} passHref>
+          <button className={`btn btn-primary ${styles.button}`}>{buttonText}</button>
         </Link>
       </div>
     </div>
