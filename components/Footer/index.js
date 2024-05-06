@@ -14,7 +14,7 @@ export default function Footer() {
         <Link href="/Favorite">
           <img src="/Favorite1.svg" alt="Image 3" className={styles.image3}/>
         </Link>
-        <Link href="/Home">
+        <Link href="/Search">
           <img src="/Search.svg" alt="Image 4" className={styles.image4}/>
         </Link>
       </div>
