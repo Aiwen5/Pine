@@ -24,7 +24,7 @@ export default function Home() {
   }, [router.query]);
 
   const handleExploreClick = () => {
-    router.push('/Quiz'); 
+    router.push('/quiz'); 
   };
 
 const data = [
