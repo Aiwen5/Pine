@@ -58,7 +58,7 @@
   color:var(--primary);
 }
 
-.button{
+.button {
     width: 191px;
     height: 49px;
     border-radius: 30px;
@@ -67,9 +67,15 @@
     border-color: var(--secondary);
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
     font-size: var(--font-body-bold-size);
-    }
-    
- .button:active {
+    font-weight: var(--font-body-bold-weight);
+}
+
+.button:active {
+    background-color: var(--secondary);
+    border-color: var(--primary)
+}
+
+.button:hover {
     background-color: var(--secondary);
     border-color: var(--primary)
 }
