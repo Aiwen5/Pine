@@ -4,7 +4,6 @@
   background-color: var(--bgAccent);
   border-radius: 25px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
@@ -58,24 +57,28 @@
   font-size: 0.7rem;
 }
 
-.time, .difficulty {
-  font-size: 0.8rem;
-}
-
 .actions {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 1.1em;
+  gap: 1em;
+  margin-left: -9.29em;
 }
 
 .findButton, .recipeButton {
   background-color: var(--primary);
+  font-size: var(--font-body-size);
+  font-weight: var(--font-body-bold-weight);
   color: var(--bg);
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   text-wrap: nowrap;
+  text-decoration: none;
 }
 
 .findButton:hover, .recipeButton:hover {
