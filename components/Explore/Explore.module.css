@@ -36,12 +36,13 @@
   }
   
   .button {
-    width: 150px; 
+    width: 150px;
+    font-size: var(--font-body-size);
     height: 40px; 
     border-radius: 20px; 
     background-color: var(--primary);
     color: var(--bg);
-    border: none; 
+    border-color: var(--secondary);
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
     position: absolute;
     bottom: 10px;
@@ -58,3 +59,7 @@
     color: var(--primary); 
   }
   
+  .button:hover {
+    background-color: var(--secondary);
+    border-color: var(--primary)
+}
