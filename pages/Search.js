@@ -4,9 +4,8 @@ import styles from "@/styles/Search.module.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DishInventory from "@/data/DishInventory";
-import Category from "@/components/Category"; 
+import DishCard from "@/components/DishCard";
 import { useRouter } from "next/router";
-import DishDescription from "./description/[id]";
 
 export default function Search() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -21,15 +20,14 @@ export default function Search() {
     setSearchResults(filteredResults);
   };
 
-  const handleClick = (dishId) => {
-    router.push(`/description/${dishId}`);
-  };
-
   return (
     <>
       <Head>
         <title>Search</title>
-        <meta name="description" content="Created by Daniel Der & Evan Schatz" />
+        <meta
+          name="description"
+          content="Created by Daniel Der & Evan Schatz"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Logo.ico" />
       </Head>
@@ -47,13 +45,7 @@ export default function Search() {
           </div>
           <div className={styles.results}>
             {searchResults.map((result) => (
-              <Category
-              key={result.id}
-              imageURL={result.image}
-              description={result.description}
-              buttonText={result.name}
-              onClick={() => handleClick(result.id)}
-            />
+              <DishCard key={result.id} dish={result} />
             ))}
           </div>
           <Footer />
