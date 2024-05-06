@@ -5,10 +5,15 @@ import DishInventory from '@/data/DishInventory';
 import Header from '@/components/Header';
 import Head from 'next/head';
 import Footer from '@/components/Footer';
+import Filter from '@/components/Filter';
 
 export default function Directory() {
   const router = useRouter();
   const { category } = router.query;
+
+  const onSelectCategory = (selectedCategory) => {
+    router.push(`/directory?category=${encodeURIComponent(selectedCategory)}`);
+  };
 
   const filteredDishes = category ? DishInventory.filter(dish =>
     dish.categories.includes(category)
@@ -33,4 +38,11 @@ export default function Directory() {
       </main>
     </>
   );
+}
+function getUniqueCategories() {
+  const allCategories = DishInventory.reduce((categories, dish) => {
+    return [...categories, ...dish.categories];
+  }, []);
+
+  return Array.from(new Set(allCategories));
 }
