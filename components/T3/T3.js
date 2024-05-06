@@ -27,8 +27,8 @@ export default function T3({ selectedOption, onAnswerChange, onNext, onPrev }) {
             <img src='/Step3.svg' alt='Step1'></img>
         </div>
         <div className={styles.tutorialDesc}>
-            <h2>Step 3</h2>
-            <p>Enjoy Your Meal</p>
+            <h1>Step 3</h1>
+            <h2>Enjoy Your Meal</h2>
         </div>
         <div className={styles.bar}>
       <progress className={styles.p0} value={0} />

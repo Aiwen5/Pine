@@ -41,8 +41,8 @@ const TutorialButton = ({ text, onClick, href }) => {
             <img src='/Step4.svg' alt='Step1'></img>
         </div>
         <div className={styles.tutorialDesc}>
-            <h2>Step 4</h2>
-            <p>Add the dish to your favourites page to easily find it again</p>
+            <h1>Step 4</h1>
+            <h2>Add the dish to your favourites page to easily find it again</h2>
         </div>
         <div className={styles.bar}>
       <progress className={styles.p0} value={0} />
