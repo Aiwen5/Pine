@@ -13,3 +13,8 @@
     background-color: var(--secondary);
     border-color: var(--primary)
 }
+
+.button:hover {
+    background-color: var(--secondary);
+    border-color: var(--primary)
+}

@@ -29,21 +29,25 @@ export default function DishCard({ dish }) {
                         </div>
                         <div className={styles.timeDifficulty}>
                             <div className={styles.time}>
-                                <img src='./Time.svg'></img>
+                                <Image src='./Time.svg' width={15} height={15} alt='Time Icon' />
                                 {dish.time} mins
                             </div>
                             <div className={styles.difficulty}>
-                                <img src='./Difficulty.svg'></img>
+                                <Image src='./Difficulty.svg' width={15} height={15} alt='Difficulty Icon' />
                                 {dish.difficulty}
                             </div>
                         </div>
                     </div>
                     <div className={styles.actions}>
                         <Link href={`/map/${dishId}`} passHref>
-                            <button className={styles.findButton}>Find near me</button>
+                            <button className={styles.findButton}>Find near me
+                                <Image src='./Location.svg' width={20} height={20} alt='Location Icon'/>
+                            </button>
                         </Link>
                         <Link href={`/description/${dishId}`} passHref>
-                            <button className={styles.recipeButton}>Go to recipe</button>
+                            <button className={styles.recipeButton}>Go to recipe
+                                <Image src='./Arrow.svg' width={20} height={20} alt='arrow'/>
+                            </button>
                         </Link>
                     </div>
                 </div>
