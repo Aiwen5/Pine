@@ -48,7 +48,7 @@ export default function Search() {
               <DishCard key={result.id} dish={result} />
             ))}
           </div>
-          <Footer />
+          <Footer className={styles.Footer}/>
         </div>
       </main>
     </>
