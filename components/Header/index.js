@@ -20,8 +20,10 @@ export default function Header() {
   const isIngredientsPage = router.pathname.startsWith("/ingredients/");
   const isDirectionsPage = router.pathname.startsWith("/directions/");
   const isDirectoryPage = router.pathname.startsWith("/directory");
+  const isMapPage = router.pathname.startsWith("/map");
+  const isFAQPage = router.pathname.startsWith("/FAQ");
 
-  const hideFilterOnPages = isDescriptionPage || isIngredientsPage || isDirectionsPage || isDirectoryPage;
+  const hideFilterOnPages = isDescriptionPage || isIngredientsPage || isDirectionsPage || isDirectoryPage || isMapPage || isFAQPage;
 
   return (
     <header className={styles.header}>
