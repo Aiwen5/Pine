@@ -27,8 +27,8 @@ export default function T1({ selectedOption, onAnswerChange, onNext }) {
             <img src='/Step1.svg' alt='Step1'></img>
         </div>
         <div className={styles.tutorialDesc}>
-            <h2>Step 1</h2>
-            <p>Find a dish You're craving</p>
+            <h1>Step 1</h1>
+            <h2>Find a dish You're craving</h2>
         </div>
         <div className={styles.bar}>
   <progress className={`${styles.progress} ${styles.p1}`} value={1}></progress>
