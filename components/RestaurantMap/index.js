@@ -1,56 +1,48 @@
 import React, { useState, useEffect } from 'react';
-import GoogleMapReact from 'google-map-react';
 import axios from 'axios';
+import styles from '@/components/RestaurantMap/RestaurantMap.module.css';
+import RestaurantCard from '@/components/RestaurantCard';
+import LottieAnimation from '@/components/Animation/LottieAnimation';
+import animationData from '@/animations/panTree.json';
 
-export default function RestaurantMap({ dish }) {
-    const [center, setCenter] = useState({ lat: 59.95, lng: 30.33 });
+export default function RestaurantMap({ dishName }) {
     const [restaurants, setRestaurants] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition((position) => {
-                setCenter({
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude
-                });
-                fetchRestaurants(position.coords.latitude, position.coords.longitude);
-            }, (error) => {
-                console.error('Geolocation error:', error);
-            });
+            navigator.geolocation.getCurrentPosition(async (position) => {
+                await fetchRestaurants(position.coords.latitude, position.coords.longitude);
+            }, console.error);
         }
-    }, [dish]);
+    }, [dishName]);
 
     const fetchRestaurants = async (lat, lng) => {
-      try {
-          const response = await axios.get(`/api/restaurants`, {
-              params: { lat, lng, dish }
-          });
-          console.log("Restaurants Data:", response.data);
-          setRestaurants(response.data);
-      } catch (error) {
-          console.error('Error fetching restaurants:', error);
-      }
+        try {
+            const response = await axios.get(`/api/restaurants`, {
+                params: { lat, lng, dish: dishName }
+            });
+            console.log("Restaurants Data:", response.data);
+            setRestaurants(response.data);
+        } catch (error) {
+            console.error('Error fetching restaurants:', error);
+        } finally {
+            setLoading(false);
+        }
     };
-  
 
     return (
-        <div style={{ height: '400px', width: '100%' }}>
-            <GoogleMapReact
-                bootstrapURLKeys={{ key: process.env.NEXT_PUBLIC_GOOGLEMAPS_API_KEY }}
-                center={center}
-                defaultZoom={14}
-            >
-                {restaurants.map((restaurant, index) => (
-                    <div
-                        key={index}
-                        lat={restaurant.geometry.location.lat}
-                        lng={restaurant.geometry.location.lng}
-                        style={{ width: '100px', color: 'black', background: 'white', padding: '10px', borderRadius: '10px' }}
-                    >
-                        {restaurant.name}
-                    </div>
-                ))}
-            </GoogleMapReact>
+        <div className={styles.container}>
+            {loading ? (
+                <div className={styles.loadingAnimation}>
+                    <LottieAnimation className={styles.lottieContainer} animationData={animationData} height={250} />
+                    <p>Loading...</p>
+                </div>
+            ) : (
+                restaurants.map((restaurant, index) => (
+                    <RestaurantCard key={index} restaurant={restaurant} />
+                ))
+            )}
         </div>
     );
 };
