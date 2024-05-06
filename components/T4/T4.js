@@ -51,8 +51,8 @@ const TutorialButton = ({ text, onClick, href }) => {
       <progress className={styles.p1} value={1} />
         </div>
         <div className={styles.buttoncontainer}>
-      <TutorialButton text="Take The Quiz" href="/quiz"/>
-      <TutorialButton text="Done" href="/"/>
+      <Button placeholder="Take The Quiz" href="/quiz"/>
+      <Button placeholder="Done" href="/"/>
       </div>
       </div>
       </main>
