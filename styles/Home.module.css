@@ -35,7 +35,7 @@
     font-size: var(--font-h1-size);
     color: var(--primary);
     font-family: 'Poppins', sans-serif;
-    margin-right: 73px;
+    padding-right: 25px;
   }
   
   .help {

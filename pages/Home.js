@@ -55,25 +55,25 @@ const data = [
     buttonLink: "/chinese-page"
   },
   {
-    imageURL: "https://spicysouthernkitchen.com/wp-content/uploads/sweet-and-sour-chicken-1.jpg",
+    imageURL: "https://images.pexels.com/photos/4049145/pexels-photo-4049145.jpeg?cs=srgb&dl=pexels-prasannabaarathi-4049145.jpg&fm=jpg",
     description: "Italian Cuisine", 
     buttonText: "Italian", 
     buttonLink: "/italian-page"
   },
   {
-    imageURL: "https://spicysouthernkitchen.com/wp-content/uploads/sweet-and-sour-chicken-1.jpg",
+    imageURL: "https://t3.ftcdn.net/jpg/05/70/04/02/360_F_570040265_4xitPhVoc637RBqvEDHCX0BJ1mSpqtgo.jpg",
     description: "Indian Cuisine",
     buttonText: "Indian",
     buttonLink: "/indian-page"
   },
   {
-    imageURL: "https://spicysouthernkitchen.com/wp-content/uploads/sweet-and-sour-chicken-1.jpg",
+    imageURL: "https://us.123rf.com/450wm/kasia2003/kasia20032305/kasia2003230500362/205272605-4th-of-july-american-independence-day-traditional-picnic-food-american-burger-and-cocktail-american.jpg?ver=6",
     description: "American Cuisine",
     buttonText: "American",
     buttonLink: "/american-page"
   },
   {
-    imageURL: "https://spicysouthernkitchen.com/wp-content/uploads/sweet-and-sour-chicken-1.jpg",
+    imageURL: "https://images.pexels.com/photos/628776/pexels-photo-628776.jpeg?cs=srgb&dl=pexels-christel-heimdal-jensen-628776.jpg&fm=jpg",
     description: "Asian Cuisine",
     buttonText: "Asian",
     buttonLink: "/asian-page"
