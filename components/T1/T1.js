@@ -31,14 +31,14 @@ export default function T1({ selectedOption, onAnswerChange, onNext }) {
             <h2>Find a dish You're craving</h2>
         </div>
         <div className={styles.bar}>
-  <progress className={`${styles.progress} ${styles.p1}`} value={1}></progress>
-  <progress className={`${styles.progress} ${styles.p0}`} value={0}></progress>
-  <progress className={`${styles.progress} ${styles.p0}`} value={0}></progress>
-  <progress className={`${styles.progress} ${styles.p0}`} value={0}></progress>
-    </div>
-      <div className={styles.buttoncontainer}>
-      <Button placeholder="Next" onClick={onNext} />
-      </div>
+          <progress className={`${styles.progress} ${styles.p1}`} value={1}></progress>
+          <progress className={`${styles.progress} ${styles.p0}`} value={0}></progress>
+          <progress className={`${styles.progress} ${styles.p0}`} value={0}></progress>
+          <progress className={`${styles.progress} ${styles.p0}`} value={0}></progress>
+        </div>
+        <div className={styles.buttoncontainer}>
+          <Button placeholder="Next" onClick={onNext} />
+        </div>
       </div>
       </main>
         </>
