@@ -599,6 +599,87 @@ const DishInventory = [
       fat: 22
     }
   },
+  {
+    id: 19,
+    name: "Chicken Tikka Masala",
+    rating: 4.5,
+    time: 60,
+    difficulty: "Medium",
+    description: "Chicken Tikka Masala is a popular Indian dish featuring marinated and grilled chicken chunks in a creamy tomato-based sauce with aromatic spices.",
+    categories: ["Indian", "Chicken", "Curry"],
+    image: "/Images/ChickenTikkaMasala.jpg",
+    steps: [
+      "Marinate chicken pieces in yogurt and spices like cumin, coriander, and garam masala.",
+      "Grill or bake the chicken until cooked through.",
+      "Prepare the masala sauce by sautéing onions, garlic, ginger, and spices in a pan.",
+      "Add tomato puree, cream, and other seasonings to the pan and simmer until thickened.",
+      "Add the cooked chicken to the sauce and simmer until heated through.",
+      "Garnish with fresh cilantro and serve with rice or naan bread."
+    ],
+    ingredients: [
+      "1 lb boneless, skinless chicken breasts, cut into chunks",
+      "1 cup plain yogurt",
+      "2 tablespoons lemon juice",
+      "2 teaspoons ground cumin",
+      "2 teaspoons ground coriander",
+      "1 teaspoon paprika",
+      "1 teaspoon garam masala",
+      "Salt and pepper to taste",
+      "2 tablespoons vegetable oil",
+      "1 onion, finely chopped",
+      "3 cloves garlic, minced",
+      "1-inch piece of ginger, grated",
+      "1 can (14 oz) tomato puree",
+      "1 cup heavy cream",
+      "Fresh cilantro for garnish"
+    ],
+    nutrition: {
+      calories: 400,
+      protein: 30,
+      carbs: 15,
+      fat: 25
+    }
+  },
+  {
+    id: 20,
+    name: "Palak Paneer",
+    rating: 4.8,
+    time: 45,
+    difficulty: "Medium",
+    description: "Palak Paneer is a nutritious and flavorful Indian dish made with spinach (palak) and paneer (Indian cottage cheese) cooked with aromatic spices.",
+    categories: ["Indian", "Vegetarian", "Curry"],
+    image: "/Images/PalakPaneer.jpg",
+    steps: [
+      "Blanch spinach leaves in boiling water, then transfer to ice water to retain color.",
+      "Blend the blanched spinach into a smooth paste along with green chilies and ginger.",
+      "Sauté onions, garlic, and spices in a pan until fragrant.",
+      "Add the spinach puree and cook until thickened.",
+      "Add cubes of paneer and cook until heated through.",
+      "Finish with a splash of cream and garnish with garam masala and fenugreek leaves.",
+      "Serve hot with rice or naan."
+    ],
+    ingredients: [
+      "2 bunches of spinach, washed and chopped",
+      "2 green chilies",
+      "1-inch piece of ginger",
+      "1 onion, finely chopped",
+      "3 cloves garlic, minced",
+      "1 teaspoon cumin seeds",
+      "1 teaspoon garam masala",
+      "1/2 teaspoon turmeric powder",
+      "Salt to taste",
+      "1 cup paneer, cubed",
+      "2 tablespoons vegetable oil",
+      "2 tablespoons heavy cream",
+      "1 teaspoon dried fenugreek leaves (kasuri methi) for garnish"
+    ],
+    nutrition: {
+      calories: 300,
+      protein: 15,
+      carbs: 10,
+      fat: 20
+    }
+  },
 ];
 
 export default DishInventory;

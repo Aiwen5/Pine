@@ -35,13 +35,28 @@ export default function Search() {
         <div className={styles.container}>
           <Header />
           <div className={styles.searchbox}>
-            <input
-              type="text"
-              placeholder="Search dishes..."
-              value={searchQuery}
-              onChange={(e) => handleSearch(e.target.value)}
-              className={styles.input}
-            />
+            <div className={styles.inputWrapper}>
+              <input
+                type="text"
+                placeholder="Search dishes..."
+                value={searchQuery}
+                onChange={(e) => handleSearch(e.target.value)}
+                className={styles.input}
+              />
+              <div
+                className={styles.searchIcon}
+                style={{
+                  backgroundImage: `url('/search.svg')`,
+                  backgroundSize: 'contain',
+                  backgroundRepeat: 'no-repeat',
+                  width: '50px', 
+                  height: '50px', 
+                  position: 'absolute',
+                  left: '20px', 
+                  transform: 'translateY(-45%)',
+                }}
+              />
+            </div>
           </div>
           <div className={styles.results}>
             {searchResults.map((result) => (
