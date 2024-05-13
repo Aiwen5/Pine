@@ -30,10 +30,12 @@ export default function DishCard({ dish }) {
                         <div className={styles.timeDifficulty}>
                             <div className={styles.time}>
                                 <Image src='./Time.svg' width={15} height={15} alt='Time Icon' />
+                                {` `}
                                 {dish.time} mins
                             </div>
                             <div className={styles.difficulty}>
                                 <Image src='./Difficulty.svg' width={15} height={15} alt='Difficulty Icon' />
+                                {` `}
                                 {dish.difficulty}
                             </div>
                         </div>

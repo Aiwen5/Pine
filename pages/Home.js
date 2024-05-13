@@ -117,7 +117,7 @@ const data = [
               />
             ) : (
               <Link href="/quiz">
-              <Button className={styles.exploreButton} onClick={handleExploreClick} placeholder="Start Quiz"></Button>
+                <Button className={styles.exploreButton} onClick={handleExploreClick} placeholder="Start Quiz"></Button>
               </Link>
             )}
           </div>
