@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import DishInventory from '@/data/DishInventory';
 import DishCard from '@/components/DishCard';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 export default function SearchPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -36,24 +37,12 @@ export default function SearchPage() {
             <div className={styles.inputWrapper}>
               <input
                 type="text"
-                placeholder="Search dishes..."
+                placeholder="Dishes, Meals, and More"
                 value={searchQuery}
                 onChange={(e) => handleSearch(e.target.value)}
                 className={styles.input}
               />
-              <div
-                className={styles.searchIcon}
-                style={{
-                  backgroundImage: `url('/search.svg')`,
-                  backgroundSize: 'contain',
-                  backgroundRepeat: 'no-repeat',
-                  width: '50px', 
-                  height: '50px', 
-                  position: 'absolute',
-                  left: '20px', 
-                  transform: 'translateY(-45%)',
-                }}
-              />
+              <Image className={styles.searchIcon} src="/search.svg" alt="Search" width={50} height={50} />
             </div>
           </div>
           <div className={styles.results}>
