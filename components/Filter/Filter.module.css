@@ -1,29 +1,38 @@
 .filter {
     position: relative;
-    }
-    
-    .dropdown {
-    position: absolute;
-    top: calc(100% + 5px);
+  }
+  
+  .dropdownContainer {
+    position: relative; 
+  }
+  
+  .dropdown {
+    position: absolute; 
     left: 0;
-    z-index: 1;
-    width: 150px;
-    height:30px;
-    background-color: var(--thirdenary);
-    overflow: auto;
-    }
-    
-    .menuIcon {
+    z-index: 999;
+    width: 200px; 
+    max-height: 50px; 
+    overflow-y: auto; 
+    background-color: var(--primary);
+    color: var(--bg);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .menuIcon {
     width: 170px;
     height: 170px;
     cursor: pointer;
     position: absolute;
-    left: 20px;
+    left: 100px;
     transform: translateY(-50%);
-    }
-
-    .dropdown option {
-        background-color: var(--bg); 
-        border: 1px solid var(--border-color); 
-        margin-bottom: 5px; 
-    }
+  }
+  
+  .dropdown option {
+    background-color: var(--primary);
+    border: 1px solid var(--border-color);
+    gap: 2px;
+    margin-top: 5px;
+  }
+  
