@@ -33,7 +33,7 @@ export default function Search() {
       </Head>
       <main className={styles.main}>
         <div className={styles.container}>
-          <Header />
+          <Header className={styles.filter}/>
           <div className={styles.searchbox}>
             <div className={styles.inputWrapper}>
               <input

@@ -29,9 +29,11 @@ export default function Header() {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <ul className={styles.navList}>
-          <li onClick={goBack} className={styles.backButton}>
-            <img src='/Back.svg' alt='back' className={styles.backIcon} />
-          </li>
+          {!isHomePage && (
+            <li onClick={goBack} className={styles.backButton}>
+              <img src='/Back.svg' alt='back' className={styles.backIcon} />
+            </li>
+          )}
           <li>
             <Link href="/Home" legacyBehavior>
               <a>
@@ -39,9 +41,9 @@ export default function Header() {
               </a>
             </Link>
           </li>
-          {(!isHomePage && !hideFilterOnPages) && (
-            <li>
-              <Filter categories={getUniqueCategories()} onSelectCategory={onSelectCategory} />
+          {!isHomePage && !hideFilterOnPages && (
+            <li className={styles.filterItem}>
+              <Filter className={styles.filter} categories={getUniqueCategories()} onSelectCategory={onSelectCategory} />
             </li>
           )}
         </ul>
