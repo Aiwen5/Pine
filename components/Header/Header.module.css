@@ -46,9 +46,6 @@
     width: 75px; 
     height: auto; 
   }
-  .filter{
-    z-index: 10;
-  }
   .filterItem {
     z-index: 2;
   }

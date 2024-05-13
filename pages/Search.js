@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import Head from "next/head";
-import styles from "@/styles/Search.module.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import DishInventory from "@/data/DishInventory";
-import DishCard from "@/components/DishCard";
-import { useRouter } from "next/router";
+import React, { useState } from 'react';
+import Head from 'next/head';
+import styles from '@/styles/Search.module.css';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import DishInventory from '@/data/DishInventory';
+import DishCard from '@/components/DishCard';
+import { useRouter } from 'next/router';
 
-export default function Search() {
+export default function SearchPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const router = useRouter();
@@ -24,16 +24,13 @@ export default function Search() {
     <>
       <Head>
         <title>Search</title>
-        <meta
-          name="description"
-          content="Created by Daniel Der & Evan Schatz"
-        />
+        <meta name="description" content="Created by Daniel Der & Evan Schatz" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Logo.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.container}>
-          <Header className={styles.filter}/>
+        <Header />
+        <div className={styles.content}>
           <div className={styles.searchbox}>
             <div className={styles.inputWrapper}>
               <input
@@ -63,8 +60,8 @@ export default function Search() {
               <DishCard key={result.id} dish={result} />
             ))}
           </div>
-          <Footer className={styles.Footer}/>
         </div>
+        <Footer className={styles.Footer} />
       </main>
     </>
   );

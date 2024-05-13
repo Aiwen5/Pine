@@ -5,8 +5,8 @@ export default function Filter({ categories, onSelectCategory }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleChange = (event) => {
-    const selectedCategory = event.target.value;
-    onSelectCategory(selectedCategory);
+    const selectedCategories = Array.from(event.target.selectedOptions, (option) => option.value);
+    onSelectCategory(selectedCategories);
   };
 
   const toggleDropdown = () => {
@@ -28,12 +28,12 @@ export default function Filter({ categories, onSelectCategory }) {
         />
         {isOpen && (
           <select
+            multiple
             onChange={handleChange}
             onBlur={closeDropdown}
             className={styles.dropdown}
             size={categories.length + 1} 
           >
-            <option value="">All Categories</option>
             {categories.map((category, index) => (
               <option key={index} value={category}>
                 {category}
