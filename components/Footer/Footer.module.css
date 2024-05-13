@@ -2,9 +2,8 @@
     width: 430px;
     max-height: 80px; 
     background-color: var(--bgAccent);
-    color: #fff;
     padding: 10px 0; 
-    text-align: center;
+
     position: sticky;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -15,27 +14,14 @@
   
   .imageContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end; 
     margin-top: 5px; 
+    text-align: center;
   }
-  
-  .image1 {
-    width: 80px; 
-    height: auto; 
-  }
-  
-  .image2 {
-    width: 80px; 
-    height: auto; 
-  }
-  
-  .image3 {
-    width: 90px; 
-    height: auto; 
-  }
-  
-  .image4 {
-    width: 80px; 
-    height: auto; 
+
+  .iconText {
+    margin-top: -20px;
+    font-size: var(--font-nav-size);
+    color: var(--primary);
   }
