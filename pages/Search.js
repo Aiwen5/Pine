@@ -29,6 +29,7 @@ export default function SearchPage() {
         <link rel="icon" href="/Logo.ico" />
       </Head>
       <main className={styles.main}>
+        <div className={styles.container}>
         <Header />
         <div className={styles.content}>
           <div className={styles.searchbox}>
@@ -62,6 +63,7 @@ export default function SearchPage() {
           </div>
         </div>
         <Footer className={styles.Footer} />
+        </div>
       </main>
     </>
   );
