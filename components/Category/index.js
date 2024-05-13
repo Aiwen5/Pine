@@ -1,6 +1,7 @@
-import Link from 'next/link';
+import React from 'react';
 import styles from './Category.module.css';
 import Filter from '../Filter';
+import Link from 'next/link';
 
 export default function Category({ imageURL, description, buttonText, categories, onSelectCategory }) {
   const categoryLink = `/directory?category=${encodeURIComponent(buttonText)}`;
