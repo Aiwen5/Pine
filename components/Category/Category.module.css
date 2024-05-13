@@ -34,8 +34,8 @@
   
   .button {
     width: 150px;
-    font-size: var(--font-body-size);
-    height: 40px; 
+    font-size: var(--font-body-bold-size);
+    height: 50px; 
     border-radius: 20px; 
     background-color: var(--primary);
     color: var(--bg);
