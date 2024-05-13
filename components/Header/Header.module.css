@@ -1,51 +1,51 @@
-.nav {
-  overflow: hidden;
+.header {
+  position: sticky;
   background-color: var(--bg);
-  width: 430px;
-  height: 131px;
+  z-index: 1000;
+  max-width: 430px;
+  height: 113px;
+}
+
+.nav {
   display: flex;
   align-items: center;
-  position: relative;
-  top: 30px;
+  height: auto; 
+  justify-content: flex-start;
 }
-  
-  .navList {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-start; 
-    align-items: center; 
-  }
 
-  .header {
-    position: sticky;
-  }
-  
-  .Logo {
-    width:80px;
-    height:auto;
-  }
-  
-  .navList li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-  }
-  .logoContainer {
-    align-items: center; 
-  }
+.navList {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  margin-right: 430px;
+}
 
-  .backIcon {
-    width: 75px; 
-    height: auto; 
-  }
-  .filterItem {
-    z-index: 2;
-  }
+.Logo {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.backIcon {
+  width: 75px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.filterItem {
+  margin-left: auto; 
+  margin-right: 10px;
+}
+
+.content {
+  min-height: 100vh;
+  padding-top: 200px; 
+}
+
+.navList li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
