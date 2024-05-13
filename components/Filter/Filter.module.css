@@ -1,16 +1,17 @@
 .filter {
-    position: relative;
+    position: absolute;
+    z-index: 2000;
   }
   
   .dropdownContainer {
     position: relative; 
+    z-index: 2000; 
   }
   
   .dropdown {
     position: absolute; 
     left: 0;
-    z-index: 999;
-    width: 200px; 
+    width: 200px;
     max-height: 50px; 
     overflow-y: auto; 
     background-color: var(--primary);
@@ -34,6 +35,15 @@
     background-color: var(--primary);
     border: 1px solid var(--border-color);
     gap: 2px;
+    max-height: 50px;
     margin-top: 15px;
+  }
+  
+  .dropdown option:checked {
+    background-color: var(--bg);
+  }
+  
+  .dropdown option:hover {
+    color: var(--bg);
   }
   
