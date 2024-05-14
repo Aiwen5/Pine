@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 430px;
+  min-height: 932px;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 590px;
+}
+
+.outerContentContainer {
+  width: 390px;
+}

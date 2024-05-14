@@ -23,11 +23,9 @@
   }
   
   .menuIcon {
-    width: 170px;
-    height: 170px;
     cursor: pointer;
     position: absolute;
-    left: 100px;
+    left: 200px;
     transform: translateY(-50%);
   }
   

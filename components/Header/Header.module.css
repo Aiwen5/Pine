@@ -2,25 +2,25 @@
   position: sticky;
   background-color: var(--bg);
   z-index: 90;
-  max-width: 430px;
+  width: 430px;
   height: 113px;
-  margin-top: 20px;
-  margin-left: 150px;
+  margin-top: 50px;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  height: auto; 
   justify-content: flex-start;
+  width: auto;
 }
 
 .navList {
   list-style-type: none;
   display: flex;
+  position: relative;
   justify-content: flex-start; 
   align-items: center;
-  margin-right: 430px;
+  padding-left: 20px;
 }
 
 .Logo {
@@ -32,7 +32,7 @@
 .backIcon {
   width: 75px;
   height: auto;
-  margin-left: 10px;
+  margin-left: -20px;
 }
 
 .filterItem {

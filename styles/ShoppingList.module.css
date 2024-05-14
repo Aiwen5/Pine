@@ -33,7 +33,7 @@
 }
 
 .contentContainer {
-  min-height: 530px;
+  min-height: 480px;
   width: 100%;
   background-color: var(--bg);
 }
@@ -60,7 +60,6 @@
 }
 
 .ingredientCheckbox {
-  margin-right: 30px;
   padding: 10px;
   background-color: var(--bg);
 }

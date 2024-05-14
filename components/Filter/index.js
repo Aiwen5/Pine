@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './Filter.module.css';
+import Image from 'next/image';
 
 export default function Filter({ categories, onSelectCategory }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,9 +21,11 @@ export default function Filter({ categories, onSelectCategory }) {
   return (
     <div className={styles.filter}>
       <div className={styles.dropdownContainer}>
-        <img
-          src="/Menu.svg"
+        <Image
+          src="/Filter.svg"
           alt="Menu"
+          width={35}
+          height={35}
           className={styles.menuIcon}
           onClick={toggleDropdown}
         />
