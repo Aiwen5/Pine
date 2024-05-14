@@ -17,6 +17,10 @@
     z-index: 1;
 }
 
+.descriptionContainer Header {
+  margin-left:-30px !important;
+}
+
   .imageContainer {
     width: 100%;
     overflow: hidden;
@@ -134,4 +138,5 @@
     flex-direction: row;
     gap: 10px;
   }
+  
   
