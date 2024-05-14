@@ -12,28 +12,34 @@
   background-color: var(--bg);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 
-.informationContainer {
-  width: 370px;
-  position: relative;
-  background: var(--bg);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  top: -50px;
-  padding: 30px;
-  padding-bottom: 0;
-  text-align: left;
+.clearButton {
+  background-color: var(--primary);
+  color: var(--bg);
+  border-color: var(--secondary);
+  padding: 10px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+.clearButton:hover {
+  background-color: var(--secondary);
+  border-color: var(--primary);
 }
 
-.imageContainer img {
+.contentContainer {
+  min-height: 530px;
   width: 100%;
-  object-fit: cover;
-  opacity: 1;
-  transition: opacity 0.5s ease;
-  mask-image: linear-gradient(to top, black 70%, transparent 100%);
+  background-color: var(--bg);
+}
+
+.outerContentContainer {
+  width: 390px;
 }
 
 .ingredientsList {
@@ -88,46 +94,4 @@
   border: solid #e8f5f7;
   border-width: 0 3px 3px 0;
   transform: translate(-50%, -70%) rotate(135deg) scaleY(-1);
-}
-
-.addButton {
-  display: flex;
-  background-color: var(--primary);
-  color: var(--bg);
-  border-color: var(--secondary);
-  padding: 10px 12px;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-.addButton:hover {
-  background-color: var(--secondary);
-  border-color: var(--primary);
-}
-
-.customToast {
-  background-color: var(--secondary) !important;
-  color: var(--bg) !important;
-  border-radius: 20px !important;
-  padding: 5px !important;
-  font-size: 18px !important;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.customToast .Toastify__toast-body {
-  margin: 0 !important;
-  padding: 0 !important;
-  flex: 1;
-  text-align: center;
-}
-
-.customToast .Toastify__close-button {
-  color: var(--bg) !important;
-  font-size: 20px !important;
-}
-
-.toastContainerCustom {
-  bottom: 90px !important;
 }

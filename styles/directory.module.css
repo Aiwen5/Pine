@@ -15,10 +15,19 @@
   justify-content: space-around;
   align-items: center;
 }
+
+.title {
+  align-self: flex-start;
+  padding: 20px;
+  font-size: 2em;
+  text-align: left;
+  font-size: var(--font-h1-size);
+}
+
 .headfilter {
-  display: flex; 
+  display: flex;
   flex-direction: row;
-  justify-content: space-between; 
-  width: 100%; 
+  justify-content: space-between;
+  width: 100%;
   padding: 10px;
 }

@@ -8,28 +8,28 @@ export default function Footer() {
       <div className={styles.imageContainer}>
         <div className={styles.iconContainer}>
           <Link href="/Home">
-            <Image src="/Home.svg" alt="Home" width={80} height={60} />
+            <Image src="/HomeIcon.svg" alt="Home" width={40} height={30} />
             <p className={styles.iconText}>Home</p>
           </Link>
         </div>
 
         <div className={styles.iconContainer}>
           <Link href="/ShoppingList">
-            <Image src="/ShoppingList.svg" alt="Shopping List" width={80} height={60} />
+            <Image src="/ListIcon.svg" alt="Shopping List" width={40} height={30} />
             <p className={styles.iconText}>Shopping List</p>
           </Link>
         </div>
 
         <div className={styles.iconContainer}>
           <Link href="/Favorite">
-            <Image src="/Favorite1.svg" alt="Favorites" width={80} height={60} />
+            <Image src="/Favorite.svg" alt="Favorites" width={40} height={30} />
             <p className={styles.iconText}>Favorites</p>
           </Link>
         </div>
 
         <div className={styles.iconContainer}>
           <Link href="/Search">
-            <Image src="/Search.svg" alt="Search" width={80} height={60} />
+            <Image src="/SearchIcon.svg" alt="Search" width={40} height={30} />
             <p className={styles.iconText}>Search</p>  
           </Link>
         </div>

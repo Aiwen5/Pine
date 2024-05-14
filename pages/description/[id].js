@@ -40,7 +40,7 @@ export default function DishDescription() {
           </div>
           <div className={styles.descriptionCard}>
             <div className={styles.row1}>
-              <h2 className={styles.dishName}>{dish.name}</h2>
+              <h1 className={styles.dishName}>{dish.name}</h1>
               <button onClick={() => setShowNutrition(!showNutrition)} className={styles.nutritionButton}>
                 Nutrition
               </button>

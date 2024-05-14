@@ -12,3 +12,4 @@ Pine is a web app that takes your cravings and guides you where to get the dish 
 - npm install google-map-react
 - npm install node-fetch
 - npm install --save chart.js react-chartjs-2
+- npm install react-toastify
