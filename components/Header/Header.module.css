@@ -1,6 +1,8 @@
 .header {
   position: sticky;
-  z-index: 1000;
+  background-color: var(--bg);
+  z-index: 90;
+  max-width: 430px;
   height: 113px;
   margin-top: 20px;
   margin-left: 150px;

@@ -24,6 +24,7 @@
   border-top-right-radius: 25px;
   top: -50px;
   padding: 30px;
+  padding-bottom: 0;
   text-align: left;
 }
 
@@ -33,4 +34,24 @@
   opacity: 1;
   transition: opacity 0.5s ease;
   mask-image: linear-gradient(to top, black 70%, transparent 100%);
+}
+
+.stepsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stepItem {
+  margin-bottom: 20px;
+}
+
+.stepNumber {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.stepText {
+  margin: 0;
 }

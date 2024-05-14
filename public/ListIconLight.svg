@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.67 26.67">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #effff8;
+        stroke-linecap: round;
+        stroke-width: 2.67px;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="ListIcon">
+    <g id="ListIconLight">
+      <path class="cls-2" d="M22.67,25.33H6.67c-1.41,0-2.77-.56-3.77-1.56-1-1-1.56-2.36-1.56-3.77V4c0-.71.28-1.39.78-1.89.5-.5,1.18-.78,1.89-.78h13.33c.71,0,1.39.28,1.89.78.5.5.78,1.18.78,1.89v17.33c0,2.21.46,4,2.67,4Z"/>
+      <path class="cls-2" d="M25.33,10.67c0-.71-.28-1.39-.78-1.89-.5-.5-1.18-.78-1.89-.78h-2.67v14c0,1.84.83,3.33,2.67,3.33s2.67-1.49,2.67-3.33v-11.33Z"/>
+      <path class="cls-1" d="M14.67,12h-8M14.67,6.67h-8M10.67,17.33h-4"/>
+    </g>
+  </g>
+</svg>
