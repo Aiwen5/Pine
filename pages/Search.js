@@ -42,7 +42,7 @@ export default function SearchPage() {
                 onChange={(e) => handleSearch(e.target.value)}
                 className={styles.input}
               />
-              <Image className={styles.searchIcon} src="/Search.svg" alt="Search" width={50} height={50} />
+              <img src="/Search.svg" alt="Image 4" className={styles.searchIcon}/>
             </div>
           </div>
           <div className={styles.results}>
