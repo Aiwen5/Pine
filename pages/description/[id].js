@@ -34,7 +34,6 @@ export default function DishDescription() {
       <main className={styles.main}>
         <div className={styles.descriptionContainer}>
           <Header />
-
           <div className={styles.imageContainer}>
             <img src={dish.image} alt={dish.name} className={styles.dishImage} />
           </div>

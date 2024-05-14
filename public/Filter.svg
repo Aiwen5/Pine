@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.56 21.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2b3f47;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="ListIcon">
+    <path id="Filter" class="cls-1" d="M12.66,21.71h7.24v-3.62h-7.24v3.62ZM0,0v3.62h32.56V0H0ZM5.43,12.66h21.71v-3.62H5.43v3.62Z"/>
+  </g>
+</svg>
