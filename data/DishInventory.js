@@ -7,7 +7,7 @@ const DishInventory = [
     difficulty: "Easy",
     description: "Ramen is a beloved Japanese noodle soup, renowned for its flavorful broth, chewy noodles, and varied toppings like sliced pork, soft-boiled egg, and green onions. With broth options like shoyu, shio, miso, and tonkotsu, and noodles made from wheat flour, ramen offers a delightful culinary experience enjoyed worldwide.",
     categories: ["Medium Difficulty", "Japanese", "Soup"],
-    image: "/Images/Ramen.jpg",
+    image: "/images/Ramen.jpg",
     steps: [
       "Prepare the broth: In a large pot, add chicken bones, water, sliced ginger, and halved onion. Bring to a boil and then simmer for 6 hours for a rich flavor.",
       "Strain the broth and season with soy sauce for a Shoyu base, miso for a Miso base, or keep it plain for a Shio base.",
@@ -44,7 +44,7 @@ const DishInventory = [
     difficulty: "Medium",
     description: "Margherita Pizza is a simple yet delicious Italian pizza, featuring a classic combination of fresh tomato sauce, mozzarella cheese, fresh basil, and a drizzle of olive oil. It's a testament to the beauty of Italian cuisine with its crispy crust and vibrant flavors.",
     categories: ["Italian", "Vegetarian"],
-    image: "/Images/MargheritaPizza.jpg",
+    image: "/images/MargheritaPizza.jpg",
     steps: [
       "Prepare the dough: Combine flour, yeast, sugar, salt, and water in a large mixing bowl. Knead until smooth and elastic, then let it rise for 1 hour.",
       "For the tomato sauce: Blend canned tomatoes, a clove of garlic, salt, and a drizzle of olive oil until smooth.",
@@ -82,7 +82,7 @@ const DishInventory = [
     difficulty: "Easy",
     description: "Caesar Salad is a classic American salad with romaine lettuce and croutons dressed with lemon juice, olive oil, egg, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, and black pepper. It's a fresh, tangy, and creamy salad that's perfect as a side dish or a light meal.",
     categories: ["Salad", "American"],
-    image: "/Images/CaesarSalad.jpg",
+    image: "/images/CaesarSalad.jpg",
     steps: [
       "Wash and dry romaine lettuce, then tear into bite-sized pieces.",
       "For the croutons, cube day-old bread, toss with olive oil and garlic, and bake until golden.",
@@ -119,7 +119,7 @@ const DishInventory = [
     difficulty: "Medium",
     description: "Tacos al Pastor is a popular Mexican street food dish featuring marinated pork that's traditionally cooked on a vertical spit. The flavorful pork is served on small tortillas and often topped with pineapple, onions, and cilantro.",
     categories: ["Mexican", "Street Food"],
-    image: "/Images/TacosAlPastor.jpg",
+    image: "/images/TacosAlPastor.jpg",
     steps: [
       "Marinate the pork with traditional spices",
       "Cook the pork on a grill or skillet",
@@ -149,7 +149,7 @@ const DishInventory = [
     difficulty: "Medium",
     description: "Kung Pao Chicken is a classic Sichuan dish known for its spicy and bold flavors, combining marinated chicken with a tangy sauce, peanuts, and chili peppers. It's a stir-fried dish that's a staple in both Chinese restaurants and household kitchens.",
     categories: ["Chinese", "Spicy"],
-    image: "/Images/KungPaoChicken.jpg",
+    image: "/images/KungPaoChicken.jpg",
     steps: [
       "Marinate the chicken in soy sauce and sherry",
       "Stir fry the chicken with vegetables and peanuts",
@@ -179,7 +179,7 @@ const DishInventory = [
     difficulty: "Easy",
     description: "Onigiri, also known as rice balls, is a Japanese comfort food made from white rice formed into triangular or cylindrical shapes and often wrapped in nori (seaweed).",
     categories: ["Easy Difficulty", "Japanese", "Snack"],
-    image: "/Images/Onigiri.jpg",
+    image: "/images/Onigiri.jpg",
     steps: [
       "Cook sushi rice and let it cool slightly",
       "Wet your hands with water and salt them",
@@ -209,7 +209,7 @@ const DishInventory = [
     difficulty: "Medium",
     description: "Tempura is a Japanese dish usually consisting of seafood or vegetables that have been battered and deep fried, known for its light, airy, and crispy texture.",
     categories: ["Medium Difficulty", "Japanese", "Appetizer"],
-    image: "/Images/Tempura.jpg",
+    image: "/images/Tempura.jpg",
     steps: [
       "Prepare the tempura batter with cold water and flour",
       "Heat oil in a deep fryer or large pot to 175°C (350°F)",
@@ -239,7 +239,7 @@ const DishInventory = [
     difficulty: "Hard",
     description: "Lasagna is a classic Italian oven-baked dish which consists of alternating layers of pasta, cheese, sauce, and meat.",
     categories: ["Hard Difficulty", "Italian", "Main Course"],
-    image: "/Images/Lasagna.jpg",
+    image: "/images/Lasagna.jpg",
     steps: [
       "Prepare the bolognese sauce by simmering ground beef, tomato sauce, and herbs",
       "Make the béchamel sauce",
@@ -272,7 +272,7 @@ const DishInventory = [
     difficulty: "Medium",
     description: "Enchiladas are a Mexican dish consisting of corn tortillas rolled around a filling, covered with a savory sauce, and baked.",
     categories: ["Medium Difficulty", "Mexican", "Main"],
-    image: "/Images/Enchiladas.jpg",
+    image: "/images/Enchiladas.jpg",
     steps: [
       "Preheat the oven to 350°F (175°C).",
       "Prepare the enchilada sauce in a saucepan.",
@@ -304,7 +304,7 @@ const DishInventory = [
     difficulty: "Hard",
     description: "Sushi, a traditional Japanese dish, involves vinegared rice accompanied by various ingredients such as seafood, vegetables, and sometimes tropical fruits.",
     categories: ["Hard Difficulty", "Japanese", "Seafood"],
-    image: "/Images/Sushi.jpg",
+    image: "/images/Sushi.jpg",
     steps: [
       "Prepare sushi rice by mixing cooked short-grain rice with a blend of rice vinegar, sugar, and salt.",
       "Slice fresh fish like salmon or tuna into thin sashimi-style pieces.",
@@ -339,7 +339,7 @@ const DishInventory = [
     difficulty: "Medium",
     description: "Tonkatsu is a crispy, deep-fried pork cutlet that's breaded with panko breadcrumbs, offering a crunchy exterior and tender meat inside.",
     categories: ["Medium Difficulty", "Japanese", "Fried"],
-    image: "/Images/Tonkatsu.jpg",
+    image: "/images/Tonkatsu.jpg",
     steps: [
       "Tenderize pork cutlets and season with salt and pepper.",
       "Dredge each cutlet in flour, dip in beaten eggs, and coat with panko breadcrumbs.",
@@ -372,7 +372,7 @@ const DishInventory = [
     difficulty: "Easy",
     description: "Miso soup is a traditional Japanese soup consisting of a dashi stock into which softened miso paste is mixed, often containing tofu and seaweed.",
     categories: ["Easy Difficulty", "Japanese", "Soup"],
-    image: "/Images/MisoSoup.jpg",
+    image: "/images/MisoSoup.jpg",
     steps: [
       "Prepare dashi stock by simmering kombu (dried kelp) and katsuobushi (dried bonito flakes).",
       "Strain the solids from the dashi stock.",
@@ -404,7 +404,7 @@ const DishInventory = [
     difficulty: "Easy",
     description: "Pesto Pasta is a simple yet vibrant dish, often made with fresh basil pesto, which is a blend of basil, pine nuts, garlic, Parmesan cheese, and olive oil.",
     categories: ["Italian", "Pasta"],
-    image: "/Images/PestoPasta.jpg",
+    image: "/images/PestoPasta.jpg",
     steps: [
       "Boil pasta in salted water until al dente.",
       "Blend fresh basil, garlic, pine nuts, Parmesan, and olive oil to make pesto.",
@@ -436,7 +436,7 @@ const DishInventory = [
     difficulty: "Medium",
     description: "Chicken Parmigiana is a hearty Italian-American classic that consists of breaded chicken breasts topped with marinara sauce and melted cheese.",
     categories: ["Medium Difficulty", "Italian", "Chicken"],
-    image: "/Images/ChickenParmigiana.jpg",
+    image: "/images/ChickenParmigiana.jpg",
     steps: [
       "Pound chicken breasts to even thickness.",
       "Dredge in flour, dip in beaten eggs, then coat in breadcrumbs.",
@@ -469,7 +469,7 @@ const DishInventory = [
     difficulty: "Medium",
     description: "Tiramisu is a popular coffee-flavored Italian dessert made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, and flavored with cocoa.",
     categories: ["Medium Difficulty", "Italian", "Dessert"],
-    image: "/Images/Tiramisu.jpg",
+    image: "/images/Tiramisu.jpg",
     steps: [
       "Mix egg yolks and sugar until thick and pale, then blend in mascarpone.",
       "Dip ladyfingers in coffee and layer in a dish.",
@@ -500,7 +500,7 @@ const DishInventory = [
     difficulty: "Easy",
     description: "Beef and Broccoli is a classic Chinese stir-fry dish with tender strips of beef and fresh broccoli in a savory sauce.",
     categories: ["Chinese", "Stir Fry"],
-    image: "/Images/BeefAndBroccoli.jpeg",
+    image: "/images/BeefAndBroccoli.jpeg",
     steps: [
       "Slice beef into thin strips and marinate in a mixture of soy sauce, sesame oil, and cornstarch.",
       "Blanch broccoli florets in boiling water, then rinse under cold water.",
@@ -535,7 +535,7 @@ const DishInventory = [
     difficulty: "Medium",
     description: "Sweet and Sour Pork is a popular dish with a perfect balance of sweet and tangy flavors, featuring crispy pork pieces coated in a colorful sauce with pineapple and bell peppers.",
     categories: ["Chinese", "Fried"],
-    image: "/Images/SweetAndSourPork.jpeg",
+    image: "/images/SweetAndSourPork.jpeg",
     steps: [
       "Cut pork into bite-sized pieces and coat with seasoned cornstarch.",
       "Deep-fry the pork until golden and set aside.",
@@ -570,7 +570,7 @@ const DishInventory = [
     difficulty: "Medium",
     description: "General Tso's Chicken is a sweet and spicy deep-fried chicken dish that is popularly served in North American Chinese restaurants.",
     categories: ["Chinese", "Chicken"],
-    image: "/Images/GeneralTsosChicken.jpeg",
+    image: "/images/GeneralTsosChicken.jpeg",
     steps: [
       "Cut chicken thighs into chunks and marinate in soy sauce and egg white, then dredge in cornstarch.",
       "Deep-fry the chicken until crispy and drain on paper towels.",
@@ -607,7 +607,7 @@ const DishInventory = [
     difficulty: "Medium",
     description: "Chicken Tikka Masala is a popular Indian dish featuring marinated and grilled chicken chunks in a creamy tomato-based sauce with aromatic spices.",
     categories: ["Indian", "Chicken", "Curry"],
-    image: "/Images/ChickenTikkaMasala.jpg",
+    image: "/images/ChickenTikkaMasala.jpg",
     steps: [
       "Marinate chicken pieces in yogurt and spices like cumin, coriander, and garam masala.",
       "Grill or bake the chicken until cooked through.",
@@ -648,7 +648,7 @@ const DishInventory = [
     difficulty: "Medium",
     description: "Palak Paneer is a nutritious and flavorful Indian dish made with spinach (palak) and paneer (Indian cottage cheese) cooked with aromatic spices.",
     categories: ["Indian", "Vegetarian", "Curry"],
-    image: "/Images/PalakPaneer.jpg",
+    image: "/images/PalakPaneer.jpg",
     steps: [
       "Blanch spinach leaves in boiling water, then transfer to ice water to retain color.",
       "Blend the blanched spinach into a smooth paste along with green chilies and ginger.",
