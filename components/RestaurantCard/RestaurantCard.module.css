@@ -24,18 +24,18 @@
 }
 
 .title {
-  font-weight: bold;
+  font-weight: 375;
   margin-bottom: 5px;
   margin-top: 5px;
 }
 
 .rating {
-  color: #333;
+  color: var(--primary);
   margin-bottom: 5px;
 }
 
 .vicinity {
-  color: #666;
+  color: var(--primary-light);
   margin-bottom: 5px;
 }
 

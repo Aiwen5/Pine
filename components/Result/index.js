@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import Button from "../Button";
 import styles from "@/components/Result/Result.module.css";
-import LottieAnimation from '@/components/Animation/LottieAnimation';
-import animationData from '@/animations/panTree.json';
+import LoadingScreen from "@/components/LoadingScreen";
 import { useRouter } from 'next/router';
 
 export default function Result({ answers, onRestart }) {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [showLoadingScreen, setShowLoadingScreen] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -37,11 +37,12 @@ export default function Result({ answers, onRestart }) {
   }, [answers.Q1, answers.Q4]);
 
   const doneQuiz = () => {
-    router.push({
-      pathname: '/Home',
-      query: { q4Option: answers['Q4'] }
-    });
+    setShowLoadingScreen(true);
   };
+
+  if (showLoadingScreen) {
+    return <LoadingScreen answers={answers} />;
+  }
 
   return (
     <main className={styles.main}>
@@ -49,7 +50,6 @@ export default function Result({ answers, onRestart }) {
         <h1>Quiz Results</h1>
         {loading ? (
           <div>
-            <LottieAnimation className={styles.lottieContainer} animationData={animationData} height={250} />
             <p>Loading...</p>
           </div>
         ) : recipes.length > 0 ? (

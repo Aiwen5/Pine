@@ -24,7 +24,7 @@ export default function MapPage() {
             <img src={dish.image} alt={dish.name} className={styles.dishImage} />
           </div>
           <div className={styles.informationContainer}>
-            <h1>Find {dish.name} Near You</h1>
+            <h1>{dish.name} Near You</h1>
             <RestaurantMap dishName={dish.name} />
           </div>
           <Footer />
