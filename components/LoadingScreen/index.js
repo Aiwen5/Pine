@@ -40,11 +40,11 @@ export default function LoadingScreen({ answers }) {
     <>
       <main className={styles.main}>
         <div className={styles.loadingContainer}>
+          <h2 className={styles.title} >Customizing your homepage...</h2>
           <LottieAnimation className={styles.lottieContainer} animationData={animationData} height={250} />
           <div className={styles.progressBarContainer}>
             <div className={styles.progressBar} style={{ width: `${progress}%` }}></div>
           </div>
-          <p>Customizing your homepage...</p>
         </div>
       </main>
     </>
