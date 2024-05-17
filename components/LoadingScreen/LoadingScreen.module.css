@@ -1,0 +1,34 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 932px;
+  width: 430px;
+  background-color: var(--bg);
+}
+
+.lottieContainer {
+  margin-bottom: 20px;
+}
+
+.progressBarContainer {
+  width: 80%;
+  height: 10px;
+  background-color: var(--bgAccent);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
